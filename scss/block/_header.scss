@@ -37,6 +37,7 @@
     padding: 12px 23px 13px 23px;
     font-size: 12px;
     font-weight: 400;
+
     &::placeholder {
       color: $text-color;
     }
@@ -68,10 +69,30 @@
   }
 
   &-link__author {
+    margin-top: 2px;
     margin-left: 17.5px;
     margin-right: 0.5px;
     font-size: 14px;
     font-weight: 400;
     color: $text-color;
+  }
+}
+
+.nav {
+  background-color: #0a223d;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 30.5px 0 31px 0;
+    margin: 0;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: $text-white;
   }
 }
