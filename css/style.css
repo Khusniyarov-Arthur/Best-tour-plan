@@ -485,11 +485,11 @@ ul {
     margin-left: 17.5px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nav {
     display: none;
   }
-  .search {
+  .header__search {
     display: none;
   }
   .user {
