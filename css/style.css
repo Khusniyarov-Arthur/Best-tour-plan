@@ -6,10 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -44,12 +42,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -57,10 +52,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -77,13 +70,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -101,10 +91,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -154,14 +142,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -229,18 +213,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -263,10 +241,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -282,10 +258,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -300,10 +274,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -355,6 +327,14 @@ body {
 
 a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .header-top {
@@ -413,7 +393,6 @@ a {
   min-width: 65px;
   height: 100%;
   border: none;
-  cursor: pointer;
 }
 
 .user__link {
@@ -428,9 +407,118 @@ a {
   border-radius: 50%;
 }
 .user-link__author {
+  margin-top: 2px;
   margin-left: 17.5px;
   margin-right: 0.5px;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.nav {
+  background-color: #0a223d;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 30.5px 0 31px 0;
+  margin: 0;
+}
+.nav__link {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 50px;
+  }
+  .header__search {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 0 30px;
+  }
+  .nav__link {
+    font-size: 12px;
+  }
+  .header__search {
+    margin-left: 30px;
+  }
+  .logo__img {
+    width: 150px;
+    height: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .header-top {
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .header__search {
+    width: 340px;
+    margin-left: 47.25px;
+    margin-right: 73px;
+  }
+  .logo__img {
+    margin-top: 0;
+    width: 132.75px;
+    height: 18px;
+  }
+  .nav__list {
+    padding: 18px 47px 24px 48px;
+  }
+  .user-link__author {
+    margin-left: 17.5px;
+  }
+}
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+  .header__search {
+    display: none;
+  }
+  .user {
+    display: none;
+  }
+  .logo__img {
+    width: 99px;
+    height: 13.42px;
+    margin-bottom: 1px;
+  }
+  .header-top {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 28px;
+  }
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 16px;
+    height: 11px;
+    border: none;
+    background-color: #ffffff;
+    padding: 0;
+  }
+  .menu-btn__line {
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+  }
 }/*# sourceMappingURL=style.css.map */
