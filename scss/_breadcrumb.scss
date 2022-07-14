@@ -1,0 +1,24 @@
+.breadcrumb {
+  &__nav {
+    padding: 19px 0 18px 0;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 13px;
+    width: 400;
+    color: $text-color;
+  }
+
+  &__item:not(:last-child):after {
+    content: "/";
+    margin-right: 4px;
+  }
+
+  &__link {
+    color: $text-color;
+  }
+}
