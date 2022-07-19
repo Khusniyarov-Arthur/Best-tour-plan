@@ -10,5 +10,11 @@
 //Подключение Header
 @import "./block/header";
 
+// Подключение Breadcrumb
+@import "breadcrumb";
+
+// Подключение секции hotel
+@import "hotel";
+
 // Подключение медиа запросов
-@import "./media";
+@import "media";
