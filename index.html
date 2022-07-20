@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,600&family=Nunito:wght@400;600;800&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -121,7 +121,27 @@
             <span class="raiting__counter">4.5/<span class="raiting__max">5</span></span>
           </div>
         </div>
+
+        <section class="grid">    
+          <div class="grid__wrapper">      
+            <div class="swiper  grid__swiper">            
+              <div class="swiper-wrapper grid__wrapper">
+                <div class="swiper-slide grid__slide"><img class="grid__img" src="./img/slide_1.jpg" alt="Слайд"></div>
+                <div class="swiper-slide grid__slide"><img class="grid__img" src="./img/slide_2.jpg" alt="Слайд"></div>
+                <div class="swiper-slide grid__slide"><img class="grid__img" src="./img/slide_3.jpg" alt="Слайд"></div>
+                <div class="swiper-slide grid__slide"><img class="grid__img" src="./img/slide_4.jpg" alt="Слайд"></div>
+                <div class="swiper-slide grid__slide"><img class="grid__img" src="./img/slide_5.jpeg" alt="Слайд"></div>
+              </div> 
+
+              <button class="swiper-button-prev grid__buton-left grid__button_swiper"></button>
+              <button class="swiper-button-next grid__buton-right grid__button_swiper"></button> 
+            </div>  
+          </div>  
+        </section>
       </div>
     </section>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -536,6 +536,62 @@ ul {
   font-weight: 700;
 }
 
+.swiper {
+  position: relative;
+  width: 728px;
+  height: 450px;
+  margin: 0;
+  margin-left: 3px;
+  border-radius: 8px;
+}
+.swiper::after {
+  content: "";
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.grid__wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.grid__img {
+  width: 100%;
+  height: 100%;
+}
+.grid__button_swiper {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  background-position: center;
+}
+.grid__buton-left {
+  background-image: url("../img/chevron-left.svg");
+  margin-left: 8px;
+  margin-top: -14px;
+}
+.grid__buton-right {
+  background-image: url("../img/chevron-right.svg");
+  margin-right: 8px;
+  margin-top: -12px;
+}
+
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+  content: "";
+}
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after {
+  content: "";
+}
+
 @media (max-width: 1200px) {
   .container {
     padding: 0 50px;
