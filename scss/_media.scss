@@ -110,9 +110,9 @@
       margin-top: 6px;
     }  
 
-      &__room-text{
-        margin-left: 12px;
-      }  
+    &__room-text{
+      margin-left: 12px;
+    }  
 
     &__center{
       margin-top: 10px;
@@ -165,8 +165,7 @@
     height: 11px;
     padding: 0;
     border: none;
-    background-color: #ffffff;
-    
+    background-color: #ffffff;    
 
     &__line {
       width: 100%;
@@ -198,18 +197,18 @@
       margin-left: 20px;
     }
 
-      &__offer {
-        order: -1;
-        margin: 0;
-        margin-right: auto;
-        margin-left: 21px;
-        margin-bottom: 10px;
-      }
+    &__offer {
+      order: -1;
+      margin: 0;
+      margin-right: auto;
+      margin-left: 21px;
+      margin-bottom: 10px;
+    }
 
-      &__discription {
-        margin-left: 20px;
-        margin-right: 17px;
-      }
+    &__discription {
+      margin-left: 20px;
+      margin-right: 17px;
+    }
   }
 
   .raiting {
@@ -279,21 +278,21 @@
       margin-top: 6px;
     }
 
-      &__guests{
-        display: flex;
-        align-items:center;
-        justify-content: space-between;
-      }
+    &__guests{
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+    }
 
-         &__guests-img{
-          margin-left: 0px;
-          margin-top: 2px;
-         }
+    &__guests-img{
+    margin-left: 0px;
+    margin-top: 2px;
+    }
 
-         &__guests-text{
-          margin-left: 0px;
-          margin-top: 0px;
-         }  
+    &__guests-text{
+    margin-left: 0px;
+    margin-top: 0px;
+    }  
 
     &__room{
       display: flex;
@@ -302,33 +301,33 @@
       margin-top: 9px;
     }
 
-       &__room-img{
-         margin-left: 0px;
-        margin-top: -1px;
-       } 
+    &__room-img{
+      margin-left: 0px;
+    margin-top: -1px;
+    } 
 
-       &__room-text{
-         margin-left: 13.5px;
-       }
+    &__room-text{
+      margin-left: 13.5px;
+    }
     
     &__center{
       margin-top: 7px;
     }    
 
-      &__quick{
-        margin-top: 2px;
-      }       
+    &__quick{
+      margin-top: 2px;
+    }       
         
-        &__phone-img{
-          margin-top: 7px;
-          margin-left: 3px;
-        }
-    
-        &__phone-number{
-          margin-top: 6px;
-          margin-left: 5px;
-          margin-right: 3px;
-        } 
+    &__phone-img{
+      margin-top: 7px;
+      margin-left: 3px;
+    }
+
+    &__phone-number{
+      margin-top: 6px;
+      margin-left: 5px;
+      margin-right: 3px;
+    } 
         
     &__button{
       width: 235px;
