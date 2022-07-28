@@ -30,7 +30,7 @@
     width: 70px;
     height: 20px;
     margin-top: 5.1px;
-    margin-left: 13px;
+    margin-left: 17px;
     padding: 4px 0;
     background-color: $preamery-color;
     border-radius: 3px;
@@ -86,16 +86,16 @@
 
 .swiper {
   position: relative;
-  width: 728px;
-  height: 450px;
+  width: 729px;
+  max-height: 450px;
   margin: 0;
-  margin-left: 3px;
+  margin-left: 2px;
   border-radius: 8px;
   
   &::after{
     content: '';
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-    width: 100%;
+    min-width: 100%;
     height: 100%;
     position: absolute;
     z-index: 1;
@@ -108,8 +108,7 @@
 
 .grid{
   &__wrapper{
-    display: flex;
-    justify-content: flex-start;   
+    display: flex;       
   }
 
   &__img{
@@ -140,10 +139,121 @@
   }
 }
 
-.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+.swiper-button-next:after, .swiper-button-prev:after {
   content: '';
-  }
+}
   
-  .swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after {
-  content: '';
+.booking__wrapper{
+  margin-left: 28px;
+  margin-top: -2px;
+}
+
+.booking{
+  width: 349px;
+  min-height: 210px;
+  border-radius: 8px;
+  margin: 2px 0 27px 2px;        
+  padding: 26px 29px 25px 26px;
+  background-color: $background-nav;
+  color: $text-white;
+  font-family:"Nunito";
+
+  &__top{
+    display: flex;
+    justify-content: space-between;
   }
+
+  &__price{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90px;
+    margin-top: 2px;
+  }
+
+  &__price-start{            
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+  } 
+
+  &__cost{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  &__room-nigth{            
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__text{
+    margin-top: 8px;
+  }
+
+  &__guests{
+    display: flex;
+    align-items: center;
+  }
+          
+  &__guests-text{
+    margin-left: 9px;              
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__room{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  } 
+        
+  &__room-text{
+    margin-left: 14px;            
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__center{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+    margin-bottom: 16px;
+  }
+
+  &__quick{
+    font-family: "Nunito";          
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__phone-number{          
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: $text-white;
+  }
+      
+  &__button{
+    width: 100%;
+    height: 46px;
+    border-radius: 4px;        
+    border: none;
+    background-color: $preamery-color;
+    color: $text-white;        
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+  }    
+}
+  
+.map{
+  width: 347px;
+  height: 213px;
+  border-radius: 10px;
+  overflow: hidden;
+}
