@@ -132,6 +132,77 @@
     width: 340px;
     height: 210px;
   }
+
+  .newsletter{
+    margin-top: 60px;
+    padding-top: 92px;
+    padding-bottom: 92px;
+
+    &__wrapper{
+      width: 706px;      
+    }
+
+    &__send{          
+      margin-bottom: 1px; 
+      width: 353px;     
+    }
+
+    &__button{
+        min-width: 65px;
+    }
+  }
+
+  .reviews{
+    &__thinks{
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    &__swiper__slide{
+      padding: 95px 0;      
+    }
+
+    &__slide-container{
+      min-width: 579px;
+
+      &::before, &::after{
+        display: none;
+      }
+
+      &::after{
+        display: none;
+      }
+    }
+
+    &__stars{
+      margin-top: -3px;
+      margin-bottom: 3px;
+      margin-left: 2px;
+    }
+
+    &__stars-img{
+      margin-right: -2.0px;
+    }
+
+    &__text{
+      max-width: 455px;
+      margin-left: 65px;
+      font-weight: 300;
+      word-spacing: 0px;
+      text-align: justify;
+    }
+
+    &__buton-right{
+      margin-right: -10px;
+      margin-top: -67px;
+    }
+  
+    &__buton-left{
+      margin-left: -9px;
+      margin-top: -67px;
+    }
+
+  }
 }
 
 @media (max-width: 767px) {
@@ -341,4 +412,78 @@
     margin-top: 20px;
     margin-left: 4px;
   }  
+
+  .newsletter{
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 82px;
+    
+    &__wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 284px;    
+      margin-top: 20px;           
+    }
+
+    &__subscrib-text{
+      margin: 0;          
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__title{
+      margin-top: 5px;     
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    &__send{
+      width: 283px;
+      margin-left: 2px;
+    }
+
+    &__input{
+      padding: 0 20px;
+    }
+  }
+
+  .subscrib{
+    margin-top: 6px;
+    margin-bottom: 37px;    
+  }
+
+  .reviews{
+    &__thinks{
+      font-size: 18px;
+      line-height: 23px;
+      padding: 0 38px;
+    }
+
+    &__swiper__slide{
+      padding: 87px 0;      
+    }
+
+    &__slide-container{
+      min-width: 281px;
+      min-height: 438px;
+    }
+
+    &__text{
+      width: 219px; 
+      margin: 0 auto;
+      text-align: start;
+    }
+
+    &__buton-right{
+      margin-right: 48px;
+      margin-top: -310px;
+    }
+  
+    &__buton-left{
+      margin-left: 45px;
+      margin-top: -310px;
+    }
+  }
 }   
+
