@@ -66,9 +66,7 @@
     font-family: 'Mulish';
     font-weight: 700;
     font-size: 12px;
-    line-height: 15px;  
-    
-    
+    line-height: 15px;   
   }
 
   &__input{
@@ -84,6 +82,7 @@
   &__input_size_s {
     font-size: 14px;
     font-weight: 300;
+    
     &::placeholder {
       color: #BDBDBD;
     }
