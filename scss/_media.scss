@@ -19,6 +19,13 @@
     margin: 0;
     margin-top: 25px;      
   }
+
+  .card{
+    &__activity{
+      width: 220px;
+      height: 220px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -38,6 +45,36 @@
     width: 150px;
     height: 20px;
   }  
+
+  .card{
+    &__wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      width: 700px;
+      margin: auto;
+    }
+    
+    &__activity{
+      width: 339px;
+      height: 255px;
+    }
+    
+    &__activity_waterfall{
+      margin-top: 20px;
+    }
+
+    &__activity_sea{
+      margin-top: 20px;
+    }
+
+    &__button{
+      padding: 7px 20px;
+    }
+
+    &__text{
+      width: 220px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -51,7 +88,7 @@
       padding: 30px 0;
     }
 
-    &____search {
+    &__search {
       width: 340px;
       margin-left: 47.25px;
       margin-right: 73px;
@@ -159,12 +196,12 @@
     }
 
     &__swiper__slide{
-      padding: 95px 0;      
+      padding-top: 95px;      
     }
 
     &__slide-container{
       min-width: 579px;
-
+      
       &::before, &::after{
         display: none;
       }
@@ -186,7 +223,8 @@
 
     &__text{
       max-width: 455px;
-      margin-left: 65px;
+      margin-left: 65.5px;
+      margin-top: 26px;
       font-weight: 300;
       word-spacing: 0px;
       text-align: justify;
@@ -194,14 +232,27 @@
 
     &__buton-right{
       margin-right: -10px;
-      margin-top: -67px;
+      margin-top: 10px;
     }
   
     &__buton-left{
       margin-left: -9px;
-      margin-top: -67px;
+      margin-top: 10px;
+    }
+  }
+
+  .card{
+    margin-top: 0;
+    padding-top: 120px;
+    margin-left: 3px;
+
+    &__activity_waterfall{
+      margin-top: 20px;
     }
 
+    &__activity_sea{
+      margin-top: 20px;
+    }
   }
 }
 
@@ -461,29 +512,73 @@
     }
 
     &__swiper__slide{
-      padding: 87px 0;      
+      padding-top: 87px;      
     }
 
     &__slide-container{
       min-width: 281px;
-      min-height: 438px;
     }
 
     &__text{
       width: 219px; 
       margin: 0 auto;
+      margin-top: 25px;
+      padding-bottom: 35px;
       text-align: start;
     }
 
     &__buton-right{
-      margin-right: 48px;
-      margin-top: -310px;
+      margin-right: 47px;
+      margin-top: -190px;
     }
   
     &__buton-left{
-      margin-left: 45px;
-      margin-top: -310px;
+      margin-left: 43px;
+      margin-top: -190px;
     }
   }
-}   
+
+  .card{
+    padding-top: 90px;
+    &__other{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 36px;
+      margin-left: 17px;
+    }
+
+    &__wrapper{
+      display: flex;
+      width: 88.5%;
+    }
+
+    &__activity{
+      width: 100%;
+      margin-left: -2px;
+    }
+
+    &__activity_golf{
+      margin-top: 28px;
+      order: 1;
+    }
+
+    &__activity_sea{
+      order: 2;
+    }
+
+    &__button{
+      padding: 7px 21px;
+      margin-top: 17px;
+    }
+
+    &__text_sea{
+      width: 270px;
+    }
+
+    &__text_waterfall{
+      width: 220px;
+    }
+  }   
+}
 
