@@ -1,4 +1,6 @@
 .hotel {
+  margin-bottom: 71px;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -13,11 +15,13 @@
 
   &__stars {
     width: 100%;
-    margin: 5.5px 0px 1.5px 2px;    
+    margin-bottom: 1.5px;  
+    padding-top: 5.5px;
+    padding-left: 2px;  
   }
 
   &__name {
-    margin: 0 0 4px 0;
+    margin: 0 11px 0px 0;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -27,10 +31,10 @@
   &__offer {
     display: flex;
     justify-content: center;
+    align-self: flex-end;
     width: 70px;
     height: 20px;
-    margin-top: 5.1px;
-    margin-left: 17px;
+    margin-bottom: 4.24px;
     padding: 4px 0;
     background-color: $preamery-color;
     border-radius: 3px;
@@ -41,7 +45,6 @@
 
   &__discription {
     width: 100%;
-    margin-top: -4px;
     font-size: 12px;
     line-height: 15px;
     font-weight: 400;
@@ -61,7 +64,8 @@
   min-height: 45px;
   flex-shrink: 0;
   padding: 10px 5px 6px 5px;
-  margin-top: 10px;
+  margin-bottom: 9px;
+  align-self: flex-end;
   background-color: $preamery-color;
   border-radius: 4px;
 
@@ -87,14 +91,15 @@
 .grid{
   &__wrapper{
     display: flex;       
+    padding-left: 2px;
   }
 
   &__swiper {
     position: relative;
-    width: 729px;
+    width: 728px;
     max-height: 450px;
     margin: 0;
-    margin-left: 2px;
+    margin-right: 28px;
     border-radius: 8px;
     
     &::after{
@@ -127,15 +132,16 @@
 
   &__buton-left{
     background-image: url("../img/chevron-left.svg");
-    margin-left: 8px;
-    margin-top: -14px;
-    
+    transform: translatey(50%);
+    top: 49%;
+    left: 14px;
   }
 
   &__buton-right{    
     background-image: url("../img/chevron-right.svg");
-    margin-right: 8px;
-    margin-top: -12px;
+    transform: translatey(50%);
+    top: 49%;
+    right: 16px;
   }
 }
 
@@ -143,16 +149,12 @@
   content: '';
 }
   
-.booking__wrapper{
-  margin-left: 28px;
-  margin-top: -2px;
-}
-
 .booking{
-  width: 349px;
+  align-self: flex-end;
+  width: 350px;
   min-height: 210px;
   border-radius: 8px;
-  margin: 2px 0 27px 2px;        
+  margin: 0px 0 27px 2px;        
   padding: 26px 29px 25px 26px;
   background-color: $background-nav;
   color: $text-white;
@@ -161,13 +163,15 @@
   &__top{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 7px;
   }
 
   &__price{
     display: flex;
     flex-wrap: wrap;
+    align-self: flex-end;
     width: 90px;
-    margin-top: 2px;
+    padding-top: 2px;
   }
 
   &__price-start{            
@@ -189,16 +193,21 @@
   }
 
   &__text{
-    margin-top: 8px;
+    padding-top: 8px;
   }
 
   &__guests{
     display: flex;
     align-items: center;
+    padding-left: 16px;
+    margin-bottom: 8px;
+  }
+
+  &__guests-img{
+    margin-right: 8px;
   }
           
   &__guests-text{
-    margin-left: 9px;              
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -207,11 +216,14 @@
   &__room{
     display: flex;
     align-items: center;
-    margin-top: 8px;
+    padding-left: 16px;
   } 
+
+  &__room-img{
+    margin-right: 14px; 
+  }
         
   &__room-text{
-    margin-left: 14px;            
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -219,8 +231,7 @@
 
   &__center{
     display: flex;
-    justify-content: space-between;
-    margin-top: 7px;
+    justify-content: space-between;    
     margin-bottom: 16px;
   }
 

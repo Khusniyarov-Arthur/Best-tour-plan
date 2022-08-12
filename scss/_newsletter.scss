@@ -2,15 +2,14 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  margin-top: 70px;
   padding-top: 98px;
-  padding-bottom: 86px;
+  padding-bottom: 87px;
+  margin-bottom: 40px;
   background-image: url("../img/newsletter.jpg");
   background-position: center;
   background-repeat: no-repeat;    
   background-size:cover;
   background-attachment: fixed;
-
     
   &::after{
     content: "";
@@ -36,16 +35,14 @@
   }
 
   &__subscrib-text{
-  margin-top: 1px;
-  margin-bottom: 0;
-  margin-left: 1px;
-  font-family: sans-serif;
-  font-family: 'Mulish';
-  font-weight: 200;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 30px;
-  color: $text-white;  
+    margin: 0;
+    font-family: sans-serif;
+    font-family: 'Mulish';
+    font-weight: 200;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: $text-white;  
   }
 
   &__title{
@@ -58,7 +55,7 @@
 
   &__send{
     display: flex;
-    width: 352px;
+    width: 354px;
     height: 55px;
     border-radius: 4px;
     overflow: hidden; 
@@ -96,8 +93,4 @@
     border-radius: 0 4px 4px 0; 
     margin-right: 3px;  
   }
-}
-
-.subscrib{
-  margin: 0 0 0 1.5px;
 }

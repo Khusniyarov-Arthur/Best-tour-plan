@@ -351,14 +351,17 @@ ul {
   padding-bottom: 40px;
 }
 
+.logo {
+  margin-right: 108px;
+}
+
 .logo__img {
-  margin-top: 2px;
+  align-self: flex-end;
   width: 177px;
   height: 24px;
 }
 
 .header__search {
-  margin-left: 108px;
   margin-right: auto;
   height: 40px;
   border-radius: 6px;
@@ -460,6 +463,9 @@ ul {
   color: #333333;
 }
 
+.hotel {
+  margin-bottom: 71px;
+}
 .hotel__wrapper {
   display: flex;
   justify-content: space-between;
@@ -472,10 +478,12 @@ ul {
 }
 .hotel__stars {
   width: 100%;
-  margin: 5.5px 0px 1.5px 2px;
+  margin-bottom: 1.5px;
+  padding-top: 5.5px;
+  padding-left: 2px;
 }
 .hotel__name {
-  margin: 0 0 4px 0;
+  margin: 0 11px 0px 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -484,10 +492,10 @@ ul {
 .hotel__offer {
   display: flex;
   justify-content: center;
+  align-self: flex-end;
   width: 70px;
   height: 20px;
-  margin-top: 5.1px;
-  margin-left: 17px;
+  margin-bottom: 4.24px;
   padding: 4px 0;
   background-color: #ec1f46;
   border-radius: 3px;
@@ -497,7 +505,6 @@ ul {
 }
 .hotel__discription {
   width: 100%;
-  margin-top: -4px;
   font-size: 12px;
   line-height: 15px;
   font-weight: 400;
@@ -516,7 +523,8 @@ ul {
   min-height: 45px;
   flex-shrink: 0;
   padding: 10px 5px 6px 5px;
-  margin-top: 10px;
+  margin-bottom: 9px;
+  align-self: flex-end;
   background-color: #ec1f46;
   border-radius: 4px;
 }
@@ -538,13 +546,14 @@ ul {
 
 .grid__wrapper {
   display: flex;
+  padding-left: 2px;
 }
 .grid__swiper {
   position: relative;
-  width: 729px;
+  width: 728px;
   max-height: 450px;
   margin: 0;
-  margin-left: 2px;
+  margin-right: 28px;
   border-radius: 8px;
 }
 .grid__swiper::after {
@@ -573,29 +582,27 @@ ul {
 }
 .grid__buton-left {
   background-image: url("../img/chevron-left.svg");
-  margin-left: 8px;
-  margin-top: -14px;
+  transform: translatey(50%);
+  top: 49%;
+  left: 14px;
 }
 .grid__buton-right {
   background-image: url("../img/chevron-right.svg");
-  margin-right: 8px;
-  margin-top: -12px;
+  transform: translatey(50%);
+  top: 49%;
+  right: 16px;
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
   content: "";
 }
 
-.booking__wrapper {
-  margin-left: 28px;
-  margin-top: -2px;
-}
-
 .booking {
-  width: 349px;
+  align-self: flex-end;
+  width: 350px;
   min-height: 210px;
   border-radius: 8px;
-  margin: 2px 0 27px 2px;
+  margin: 0px 0 27px 2px;
   padding: 26px 29px 25px 26px;
   background-color: #0a223d;
   color: #ffffff;
@@ -604,12 +611,14 @@ ul {
 .booking__top {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 7px;
 }
 .booking__price {
   display: flex;
   flex-wrap: wrap;
+  align-self: flex-end;
   width: 90px;
-  margin-top: 2px;
+  padding-top: 2px;
 }
 .booking__price-start {
   font-weight: 400;
@@ -627,14 +636,18 @@ ul {
   line-height: 16px;
 }
 .booking__text {
-  margin-top: 8px;
+  padding-top: 8px;
 }
 .booking__guests {
   display: flex;
   align-items: center;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+.booking__guests-img {
+  margin-right: 8px;
 }
 .booking__guests-text {
-  margin-left: 9px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -642,10 +655,12 @@ ul {
 .booking__room {
   display: flex;
   align-items: center;
-  margin-top: 8px;
+  padding-left: 16px;
+}
+.booking__room-img {
+  margin-right: 14px;
 }
 .booking__room-text {
-  margin-left: 14px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -653,7 +668,6 @@ ul {
 .booking__center {
   display: flex;
   justify-content: space-between;
-  margin-top: 7px;
   margin-bottom: 16px;
 }
 .booking__quick {
@@ -691,9 +705,9 @@ ul {
   position: relative;
   z-index: 1;
   width: 100%;
-  margin-top: 70px;
   padding-top: 98px;
-  padding-bottom: 86px;
+  padding-bottom: 87px;
+  margin-bottom: 40px;
   background-image: url("../img/newsletter.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -721,9 +735,7 @@ ul {
   display: block;
 }
 .newsletter__subscrib-text {
-  margin-top: 1px;
-  margin-bottom: 0;
-  margin-left: 1px;
+  margin: 0;
   font-family: sans-serif;
   font-family: "Mulish";
   font-weight: 200;
@@ -741,7 +753,7 @@ ul {
 }
 .newsletter__send {
   display: flex;
-  width: 352px;
+  width: 354px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
@@ -782,13 +794,8 @@ ul {
   margin-right: 3px;
 }
 
-.subscrib {
-  margin: 0 0 0 1.5px;
-}
-
 .reviews__thinks {
   margin: 0 auto;
-  margin-top: 40px;
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
@@ -806,11 +813,11 @@ ul {
   min-width: 732px;
   border-radius: 8px;
   background-color: #ffffff;
+  padding-bottom: 10px;
 }
-.reviews__slide-container::before, .reviews__slide-container::after {
+.reviews__slide-container::before {
   content: url("../img/lefttop.svg");
   background-repeat: no-repeat;
-  margin-left: 20px;
   position: absolute;
   z-index: 1100;
   top: 13px;
@@ -856,8 +863,7 @@ ul {
 }
 .reviews__text {
   margin: 0 auto;
-  margin-top: 28px;
-  margin-bottom: 27px;
+  padding-top: 26px;
   max-width: 537px;
   font-weight: 400;
   font-size: 12px;
@@ -875,17 +881,17 @@ ul {
 }
 .reviews__buton-right {
   background-image: url("../img/chevron-right-review.svg");
-  margin-right: 8px;
-  margin-top: 7px;
+  transform: translatey(95%);
+  right: 17px;
 }
 .reviews__buton-left {
   background-image: url("../img/chevron-left-review.svg");
-  margin-left: 8px;
-  margin-top: 7px;
+  transform: translatey(95%);
+  left: 19px;
 }
 
 .card {
-  margin-top: 130px;
+  padding-top: 129px;
 }
 .card__other {
   margin: 0px;
@@ -905,12 +911,13 @@ ul {
   flex-wrap: wrap;
   flex-direction: column-reverse;
   align-items: flex-start;
+  padding: 24px 26px;
   width: 255px;
   height: 255px;
   border-radius: 6px;
   overflow: hidden;
 }
-.card__activity ::after {
+.card__activity::after {
   content: "";
   position: absolute;
   background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
@@ -922,6 +929,8 @@ ul {
 }
 .card__img {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: -2;
   width: 100%;
   height: 100%;
@@ -929,17 +938,15 @@ ul {
      object-fit: cover;
 }
 .card__text {
-  padding: 0 26px;
+  margin-bottom: 17px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 }
 .card__button {
-  padding: 7px 21px;
-  margin-top: 15px;
-  margin-bottom: 24px;
-  margin-left: 26px;
+  align-self: flex-start;
+  padding: 7px 19px;
   border: none;
   border-radius: 4px;
   -o-object-fit: cover;
@@ -955,19 +962,25 @@ ul {
   .container {
     padding: 0 50px;
   }
-  .header__search {
-    margin-left: 50px;
+  .logo {
+    margin-right: 50px;
+  }
+  .grid__swiper {
+    margin-right: 0;
+    margin-bottom: 25px;
   }
   .grid__wrapper {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .booking {
+    margin-bottom: 0;
   }
   .booking__wrapper {
     display: flex;
     justify-content: space-between;
     width: 728px;
     margin: 0;
-    margin-top: 25px;
   }
   .card__activity {
     width: 220px;
@@ -981,9 +994,6 @@ ul {
   .nav__link {
     font-size: 12px;
   }
-  .header__search {
-    margin-left: 30px;
-  }
   .logo__img {
     width: 150px;
     height: 20px;
@@ -991,18 +1001,17 @@ ul {
   .card__wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
     margin: auto;
   }
   .card__activity {
-    width: 339px;
+    width: 49%;
     height: 255px;
   }
-  .card__activity_waterfall {
-    margin-top: 20px;
+  .card__activity_bar {
+    margin-bottom: 20px;
   }
-  .card__activity_sea {
-    margin-top: 20px;
+  .card__activity_golf {
+    margin-bottom: 20px;
   }
   .card__button {
     padding: 7px 20px;
@@ -1021,13 +1030,14 @@ ul {
   }
   .header__search {
     width: 340px;
-    margin-left: 47.25px;
-    margin-right: 73px;
+    margin-right: 49px;
+  }
+  .logo {
+    margin-right: 23px;
   }
   .logo__img {
     width: 132.75px;
     height: 18px;
-    margin-top: 0;
   }
   .nav__list {
     padding: 18px 13.5px 23.5px 13.5px;
@@ -1038,38 +1048,44 @@ ul {
   .breadcrumb__list {
     padding: 0px 0 5px 0px;
   }
+  .hotel {
+    margin-bottom: 60px;
+  }
   .hotel__wrapper {
     padding-top: 6px;
   }
-  .hotel__offer {
-    margin-left: 13px;
+  .hotel__name {
+    margin-right: 10px;
   }
-  .booking__wrapper {
-    margin-top: 30px;
+  .hotel__offer {
+    margin-bottom: 5px;
+  }
+  .raiting {
+    margin-bottom: 7px;
+  }
+  .grid__swiper {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .grid__wrapper {
+    padding-left: 0;
   }
   .booking {
     width: 340px;
     margin: 0;
     padding: 26px 22px 22px 23px;
   }
-  .booking__room-nigth {
-    margin-top: -3px;
-  }
   .booking__guests {
-    margin-left: 7px;
+    justify-content: flex-end;
   }
   .booking__room {
-    margin-left: 8px;
-    margin-top: 6px;
+    justify-content: flex-end;
   }
-  .booking__room-text {
-    margin-left: 12px;
-  }
-  .booking__center {
-    margin-top: 10px;
+  .booking__room-img {
+    margin-right: 12px;
   }
   .booking__phone-number {
-    margin-left: 5px;
+    padding-left: 5px;
   }
   .booking__button {
     margin: 0;
@@ -1080,9 +1096,8 @@ ul {
     height: 210px;
   }
   .newsletter {
-    margin-top: 60px;
     padding-top: 92px;
-    padding-bottom: 92px;
+    padding-bottom: 93px;
   }
   .newsletter__wrapper {
     width: 706px;
@@ -1103,6 +1118,7 @@ ul {
   }
   .reviews__slide-container {
     min-width: 579px;
+    padding-bottom: 27px;
   }
   .reviews__slide-container::before, .reviews__slide-container::after {
     display: none;
@@ -1113,37 +1129,40 @@ ul {
   .reviews__stars {
     margin-top: -3px;
     margin-bottom: 3px;
-    margin-left: 2px;
+    padding-left: 2px;
   }
   .reviews__stars-img {
     margin-right: -2px;
   }
   .reviews__text {
     max-width: 455px;
-    margin-left: 65.5px;
-    margin-top: 26px;
     font-weight: 300;
     word-spacing: 0px;
     text-align: justify;
   }
   .reviews__buton-right {
-    margin-right: -10px;
-    margin-top: 10px;
+    transform: translatey(108%);
+    right: 0;
   }
   .reviews__buton-left {
-    margin-left: -9px;
-    margin-top: 10px;
+    transform: translatey(108%);
+    left: 1px;
   }
   .card {
-    margin-top: 0;
     padding-top: 120px;
-    margin-left: 3px;
   }
-  .card__activity_waterfall {
-    margin-top: 20px;
+  .card__activity {
+    top: 1px;
+    width: 338.5px;
   }
-  .card__activity_sea {
-    margin-top: 20px;
+  .card__wrapper {
+    padding: 0 1px;
+  }
+  .card__button {
+    padding-right: 18.5px;
+  }
+  .card__text_golf {
+    width: 200px;
   }
 }
 @media (max-width: 767px) {
@@ -1181,43 +1200,40 @@ ul {
   }
   .breadcrumb__nav {
     padding-bottom: 12px;
-    margin-left: 20px;
+    padding-left: 20px;
   }
   .hotel__wrapper {
+    padding-left: 20px;
     padding-top: 5px;
+    margin-bottom: 19px;
   }
   .hotel__stars {
     flex-basis: content;
-    margin: 0;
+    padding: 0;
     margin-right: 38px;
   }
   .hotel__name {
     width: 100%;
-    margin-left: 20px;
   }
   .hotel__offer {
     order: -1;
-    margin: 0;
     margin-right: auto;
-    margin-left: 21px;
     margin-bottom: 10px;
   }
   .hotel__discription {
-    margin-left: 20px;
     margin-right: 17px;
   }
   .raiting {
     display: none;
   }
   .grid__wrapper {
-    margin-right: 21.5px;
-    margin-left: 17px;
     display: flex;
+    padding-right: 21.5px;
+    padding-left: 21.5px;
   }
   .grid__swiper {
     height: 179px;
-    margin-top: 19px;
-    margin-left: 3px;
+    margin-bottom: 20px;
   }
   .grid__img {
     width: 100%;
@@ -1229,13 +1245,13 @@ ul {
   }
   .grid__buton-left {
     background-image: url("../img/chevron-left-phone.svg");
-    margin-left: -5px;
-    margin-top: -4px;
+    top: 58%;
+    left: 5px;
   }
   .grid__buton-right {
     background-image: url("../img/chevron-right-phone.svg");
-    margin-right: -4px;
-    margin-top: -4px;
+    top: 58%;
+    right: 6px;
   }
   .booking__wrapper {
     display: flex;
@@ -1247,73 +1263,32 @@ ul {
   .booking {
     width: 279px;
     height: 210px;
-    margin-top: 20px;
-    margin-left: 6px;
     margin-bottom: 0;
     padding-right: 21px;
     padding-bottom: 26px;
     padding-left: 22px;
-  }
-  .booking__room-nigth {
-    margin-top: -4px;
-  }
-  .booking__text {
-    margin-left: 11px;
-    margin-top: 6px;
   }
   .booking__guests {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .booking__guests-img {
-    margin-left: 0px;
-    margin-top: 2px;
-  }
-  .booking__guests-text {
-    margin-left: 0px;
-    margin-top: 0px;
-  }
   .booking__room {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 9px;
-  }
-  .booking__room-img {
-    margin-left: 0px;
-    margin-top: -1px;
-  }
-  .booking__room-text {
-    margin-left: 13.5px;
-  }
-  .booking__center {
-    margin-top: 7px;
-  }
-  .booking__quick {
-    margin-top: 2px;
-  }
-  .booking__phone-img {
-    margin-top: 7px;
-    margin-left: 3px;
   }
   .booking__phone-number {
-    margin-top: 6px;
-    margin-left: 5px;
     margin-right: 3px;
   }
   .booking__button {
     width: 235px;
-    margin-top: 1px;
   }
   .map {
     width: 279px;
     height: 173px;
-    margin-top: 20px;
-    margin-left: 4px;
   }
   .newsletter {
-    margin-top: 40px;
     padding-top: 50px;
     padding-bottom: 82px;
   }
@@ -1322,27 +1297,25 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     width: 284px;
-    margin-top: 20px;
+    padding-top: 26px;
+    padding-left: 2px;
   }
   .newsletter__subscrib-text {
-    margin: 0;
     font-size: 20px;
     line-height: 25px;
+    margin-bottom: 5px;
   }
   .newsletter__title {
-    margin-top: 5px;
     font-size: 30px;
     line-height: 38px;
   }
   .newsletter__send {
     width: 283px;
-    margin-left: 2px;
   }
   .newsletter__input {
     padding: 0 20px;
   }
   .subscrib {
-    margin-top: 6px;
     margin-bottom: 37px;
   }
   .reviews__thinks {
@@ -1355,21 +1328,21 @@ ul {
   }
   .reviews__slide-container {
     min-width: 281px;
+    padding-bottom: 13px;
   }
   .reviews__text {
     width: 219px;
     margin: 0 auto;
-    margin-top: 25px;
-    padding-bottom: 35px;
     text-align: start;
+    word-spacing: 0px;
   }
   .reviews__buton-right {
-    margin-right: 47px;
-    margin-top: -190px;
+    top: 11.5%;
+    right: 57px;
   }
   .reviews__buton-left {
-    margin-left: 43px;
-    margin-top: -190px;
+    top: 11.7%;
+    left: 54px;
   }
   .card {
     padding-top: 90px;
@@ -1378,8 +1351,8 @@ ul {
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;
-    margin-bottom: 36px;
-    margin-left: 17px;
+    margin-bottom: 35px;
+    padding-left: 5.5%;
   }
   .card__wrapper {
     display: flex;
@@ -1387,18 +1360,18 @@ ul {
   }
   .card__activity {
     width: 100%;
-    margin-left: -2px;
+  }
+  .card__activity_waterfall {
+    margin-bottom: 28px;
   }
   .card__activity_golf {
-    margin-top: 28px;
     order: 1;
   }
   .card__activity_sea {
     order: 2;
   }
   .card__button {
-    padding: 7px 21px;
-    margin-top: 17px;
+    padding: 7px 19px;
   }
   .card__text_sea {
     width: 270px;

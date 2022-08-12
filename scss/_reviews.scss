@@ -1,7 +1,6 @@
 .reviews{
     &__thinks{
     margin: 0 auto;
-    margin-top: 40px;
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
@@ -21,11 +20,11 @@
     min-width: 732px;
     border-radius: 8px;
     background-color: #ffffff;
+    padding-bottom: 10px;
 
-    &::before, &::after{
+    &::before{
       content: url('../img/lefttop.svg');          
       background-repeat: no-repeat;
-      margin-left: 20px;
       position: absolute;
       z-index: 1100;
       top: 13px;
@@ -78,8 +77,7 @@
 
   &__text{
     margin: 0 auto;
-    margin-top:28px;
-    margin-bottom: 27px;
+    padding-top: 26px;
     max-width: 537px;
     font-weight: 400;
     font-size: 12px;
@@ -99,13 +97,13 @@
 
   &__buton-right{
     background-image: url("../img/chevron-right-review.svg");
-    margin-right: 8px;
-    margin-top: 7px;
+    transform: translatey(95%);
+    right: 17px;
   }
 
   &__buton-left{
     background-image: url("../img/chevron-left-review.svg");
-    margin-left: 8px;
-    margin-top: 7px;
+    transform: translatey(95%);
+    left: 19px;
   }
 }

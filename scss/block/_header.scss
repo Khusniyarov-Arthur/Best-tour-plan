@@ -11,14 +11,17 @@
   padding-bottom: 40px;
 }
 
+.logo{
+  margin-right: 108px;
+}
+
 .logo__img {
-  margin-top: 2px;
+  align-self: flex-end;
   width: 177px;
   height: 24px;
 }
 
 .header__search {
-  margin-left: 108px;
   margin-right: auto;
   height: 40px;
   border-radius: 6px;

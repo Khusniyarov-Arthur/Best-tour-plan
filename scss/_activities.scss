@@ -1,5 +1,5 @@
 .card{
-  margin-top: 130px;
+  padding-top: 129px;
 
   &__other{
     margin: 0px;
@@ -21,12 +21,13 @@
     flex-wrap: wrap;
     flex-direction: column-reverse;
     align-items: flex-start;
+    padding: 24px 26px;
     width: 255px;
     height: 255px;
     border-radius: 6px;
     overflow: hidden;
     
-    ::after{
+    &::after{
       content:'';
       position: absolute; 
       background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
@@ -40,6 +41,8 @@
 
   &__img{
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: -2;
     width: 100%;
     height: 100%;
@@ -47,7 +50,7 @@
   }
 
   &__text{
-    padding: 0 26px;
+    margin-bottom: 17px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -55,10 +58,8 @@
   }
 
   &__button{
-    padding: 7px 21px;
-    margin-top: 15px;
-    margin-bottom: 24px;
-    margin-left: 26px;
+    align-self: flex-start;
+    padding: 7px 19px;
     border: none;
     border-radius: 4px;
     object-fit: cover;

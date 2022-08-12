@@ -3,21 +3,31 @@
     padding: 0 50px;
   }
 
-  .header__search {
-    margin-left: 50px;
+  .logo{
+    margin-right: 50px;
   }
 
-  .grid__wrapper{
-    flex-wrap: wrap;
-    justify-content: center;    
+  .grid{
+    &__swiper{
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+
+    &__wrapper{
+      flex-wrap: wrap;
+      justify-content: center;    
+    }
   }
 
-  .booking__wrapper{
+  .booking{
+    margin-bottom: 0;
+
+    &__wrapper{
     display: flex;
     justify-content: space-between;
     width: 728px; 
     margin: 0;
-    margin-top: 25px;      
+    }
   }
 
   .card{
@@ -37,10 +47,6 @@
     font-size: 12px;
   }
 
-  .header__search {
-    margin-left: 30px;
-  }
-
   .logo__img {
     width: 150px;
     height: 20px;
@@ -50,21 +56,20 @@
     &__wrapper{
       display: flex;
       flex-wrap: wrap;
-      width: 700px;
       margin: auto;
     }
     
     &__activity{
-      width: 339px;
+      width: 49%;
       height: 255px;
     }
     
-    &__activity_waterfall{
-      margin-top: 20px;
+    &__activity_bar{
+      margin-bottom: 20px;
     }
 
-    &__activity_sea{
-      margin-top: 20px;
+    &__activity_golf{
+      margin-bottom: 20px;
     }
 
     &__button{
@@ -90,15 +95,17 @@
 
     &__search {
       width: 340px;
-      margin-left: 47.25px;
-      margin-right: 73px;
+      margin-right: 49px;
     }
+  }
+
+  .logo{
+    margin-right: 23px;
   }
 
   .logo__img {
     width: 132.75px;
     height: 18px;
-    margin-top: 0;
   }
 
   .nav__list {
@@ -116,17 +123,34 @@
   }
 
   .hotel {
+    margin-bottom: 60px;
+
     &__wrapper {
       padding-top: 6px;
     }  
 
+    &__name{
+      margin-right: 10px;
+    }
+
     &__offer{
-      margin-left: 13px;
+      margin-bottom: 5px;
     }
   }
 
-  .booking__wrapper{
-    margin-top: 30px;
+  .raiting{
+    margin-bottom: 7px;
+  }
+
+  .grid{
+    &__swiper{
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &__wrapper{
+      padding-left: 0;
+    }
   }
 
   .booking{
@@ -134,29 +158,20 @@
     margin: 0;
     padding: 26px 22px 22px 23px;
 
-    &__room-nigth{
-      margin-top: -3px;
-    }
-
     &__guests{
-      margin-left: 7px;
+      justify-content: flex-end;
     }
 
     &__room{
-      margin-left: 8px;
-      margin-top: 6px;
+      justify-content: flex-end;
     }  
 
-    &__room-text{
-      margin-left: 12px;
-    }  
-
-    &__center{
-      margin-top: 10px;
+    &__room-img{
+      margin-right: 12px;
     }
 
     &__phone-number{
-      margin-left: 5px;
+      padding-left: 5px;
     }    
 
     &__button{
@@ -171,9 +186,8 @@
   }
 
   .newsletter{
-    margin-top: 60px;
     padding-top: 92px;
-    padding-bottom: 92px;
+    padding-bottom: 93px;
 
     &__wrapper{
       width: 706px;      
@@ -201,6 +215,7 @@
 
     &__slide-container{
       min-width: 579px;
+      padding-bottom: 27px;
       
       &::before, &::after{
         display: none;
@@ -214,7 +229,7 @@
     &__stars{
       margin-top: -3px;
       margin-bottom: 3px;
-      margin-left: 2px;
+      padding-left: 2px;
     }
 
     &__stars-img{
@@ -223,35 +238,40 @@
 
     &__text{
       max-width: 455px;
-      margin-left: 65.5px;
-      margin-top: 26px;
       font-weight: 300;
       word-spacing: 0px;
       text-align: justify;
     }
 
     &__buton-right{
-      margin-right: -10px;
-      margin-top: 10px;
+      transform: translatey(108%);
+      right: 0;
     }
   
     &__buton-left{
-      margin-left: -9px;
-      margin-top: 10px;
+      transform: translatey(108%);
+      left: 1px;
     }
   }
 
   .card{
-    margin-top: 0;
     padding-top: 120px;
-    margin-left: 3px;
 
-    &__activity_waterfall{
-      margin-top: 20px;
+    &__activity{
+      top: 1px;
+      width: 338.5px;
     }
 
-    &__activity_sea{
-      margin-top: 20px;
+    &__wrapper{
+      padding: 0 1px;
+    }
+
+    &__button{
+      padding-right: 18.5px;
+    }
+
+    &__text_golf{
+      width: 200px;  
     }
   }
 }
@@ -299,36 +319,34 @@
   .breadcrumb {
     &__nav {
       padding-bottom: 12px;
-      margin-left: 20px;
+      padding-left: 20px;
     }
   }
 
   .hotel {
     &__wrapper {
+      padding-left: 20px;
       padding-top: 5px;
+      margin-bottom: 19px;
     }
 
     &__stars {
       flex-basis: content;
-      margin: 0;
+      padding: 0;
       margin-right: 38px;
     }
 
     &__name {
       width: 100%;
-      margin-left: 20px;
     }
 
     &__offer {
       order: -1;
-      margin: 0;
       margin-right: auto;
-      margin-left: 21px;
       margin-bottom: 10px;
     }
 
     &__discription {
-      margin-left: 20px;
       margin-right: 17px;
     }
   }
@@ -339,15 +357,14 @@
 
   .grid{
     &__wrapper{
-      margin-right: 21.5px;
-      margin-left: 17px;    
-      display: flex;           
+      display: flex;
+      padding-right: 21.5px;
+      padding-left: 21.5px;    
     }
 
     &__swiper {
-      height: 179px;
-      margin-top: 19px;
-      margin-left: 3px;    
+      height: 179px;      
+      margin-bottom: 20px;    
     }
   
     &__img{
@@ -362,14 +379,14 @@
   
     &__buton-left{
       background-image: url("../img/chevron-left-phone.svg");
-      margin-left: -5px;
-      margin-top: -4px;      
+      top: 58%;
+      left: 5px;
     }
   
     &__buton-right{    
       background-image: url("../img/chevron-right-phone.svg");
-      margin-right: -4px;
-      margin-top: -4px;
+      top: 58%;
+      right: 6px;
     }
   }
 
@@ -384,21 +401,10 @@
   .booking{
     width: 279px;
     height: 210px;
-    margin-top: 20px;
-    margin-left: 6px;
     margin-bottom: 0;
     padding-right: 21px;
     padding-bottom: 26px;
     padding-left: 22px;
-
-    &__room-nigth{
-      margin-top: -4px;
-    } 
-    
-    &__text{
-      margin-left: 11px;
-      margin-top: 6px;
-    }
 
     &__guests{
       display: flex;
@@ -406,66 +412,27 @@
       justify-content: space-between;
     }
 
-    &__guests-img{
-    margin-left: 0px;
-    margin-top: 2px;
-    }
-
-    &__guests-text{
-    margin-left: 0px;
-    margin-top: 0px;
-    }  
-
     &__room{
       display: flex;
       align-items:center;
       justify-content: space-between;
-      margin-top: 9px;
-    }
-
-    &__room-img{
-      margin-left: 0px;
-    margin-top: -1px;
-    } 
-
-    &__room-text{
-      margin-left: 13.5px;
-    }
-    
-    &__center{
-      margin-top: 7px;
-    }    
-
-    &__quick{
-      margin-top: 2px;
-    }       
-        
-    &__phone-img{
-      margin-top: 7px;
-      margin-left: 3px;
     }
 
     &__phone-number{
-      margin-top: 6px;
-      margin-left: 5px;
       margin-right: 3px;
     } 
         
     &__button{
       width: 235px;
-      margin-top: 1px;
     } 
   }
 
   .map{
     width: 279px;
     height: 173px;
-    margin-top: 20px;
-    margin-left: 4px;
   }  
 
   .newsletter{
-    margin-top: 40px;
     padding-top: 50px;
     padding-bottom: 82px;
     
@@ -474,24 +441,23 @@
       flex-direction: column;
       align-items: flex-start;
       width: 284px;    
-      margin-top: 20px;           
+      padding-top: 26px;
+      padding-left: 2px;           
     }
 
     &__subscrib-text{
-      margin: 0;          
       font-size: 20px;
       line-height: 25px;
+      margin-bottom: 5px;
     }
 
     &__title{
-      margin-top: 5px;     
       font-size: 30px;
       line-height: 38px;
     }
 
     &__send{
       width: 283px;
-      margin-left: 2px;
     }
 
     &__input{
@@ -500,7 +466,6 @@
   }
 
   .subscrib{
-    margin-top: 6px;
     margin-bottom: 37px;    
   }
 
@@ -517,35 +482,36 @@
 
     &__slide-container{
       min-width: 281px;
+      padding-bottom: 13px;
     }
 
     &__text{
       width: 219px; 
       margin: 0 auto;
-      margin-top: 25px;
-      padding-bottom: 35px;
       text-align: start;
+      word-spacing: 0px;
     }
 
     &__buton-right{
-      margin-right: 47px;
-      margin-top: -190px;
+      top: 11.5%;
+      right: 57px;
     }
   
     &__buton-left{
-      margin-left: 43px;
-      margin-top: -190px;
+      top: 11.7%;
+      left: 54px;
     }
   }
 
   .card{
     padding-top: 90px;
+    
     &__other{
       font-weight: 700;
       font-size: 18px;
       line-height: 23px;
-      margin-bottom: 36px;
-      margin-left: 17px;
+      margin-bottom: 35px;
+      padding-left: 5.5%;
     }
 
     &__wrapper{
@@ -555,11 +521,13 @@
 
     &__activity{
       width: 100%;
-      margin-left: -2px;
+    }
+
+    &__activity_waterfall{
+      margin-bottom: 28px;
     }
 
     &__activity_golf{
-      margin-top: 28px;
       order: 1;
     }
 
@@ -568,8 +536,7 @@
     }
 
     &__button{
-      padding: 7px 21px;
-      margin-top: 17px;
+      padding: 7px 19px;
     }
 
     &__text_sea{
