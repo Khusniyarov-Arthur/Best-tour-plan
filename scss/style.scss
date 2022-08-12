@@ -1,26 +1,29 @@
 // Подключение normalize
-@import "normalize";
+@import "./normalize";
 
 // Подключение переменных
-@import "variables";
+@import "./variables";
 
 // Подключение настроек
-@import "settings";
+@import "./settings";
 
 //Подключение Header
 @import "./block/header";
 
 // Подключение Breadcrumb
-@import "breadcrumb";
+@import "./breadcrumb";
 
 // Подключение секции hotel
-@import "hotel";
+@import "./hotel";
 
 // Подключение форма с отправкой данных
-@import "newsletter";
+@import "./newsletter";
 
 // Подключение блока с отзывами
-@import "reviews";
+@import "./reviews";
+
+// Подключение блока с отзывами
+@import "./activities";
 
 // Подключение медиа запросов
-@import "media";
+@import "./media";
