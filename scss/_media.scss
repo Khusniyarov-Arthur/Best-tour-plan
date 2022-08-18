@@ -36,6 +36,29 @@
       height: 220px;
     }
   }
+
+  .footer{
+    &__contacts{
+      width: 100%;
+    }
+
+    &__send{
+      width: 100%;
+    }
+
+    &__send-message{
+      width: 100%;
+    }
+
+    &__send-name{
+      width: 100%;
+      margin-right: 15px;
+    }
+    
+    &__send-number{
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -53,6 +76,8 @@
   }  
 
   .card{
+    padding-bottom: 71px;
+
     &__wrapper{
       display: flex;
       flex-wrap: wrap;
@@ -78,6 +103,91 @@
 
     &__text{
       width: 220px;
+    }
+  }
+
+  .footer{    
+    &__wrapper{   
+      grid-gap: 1px; 
+      grid-template-columns:  0.7fr 1.2fr 1fr;
+      grid-template-areas: 
+      "logo network network"
+      "categories additional legal"
+      "contacts contacts contacts"
+      "send send send"
+      "bottoms bottoms bottoms";
+      padding-top: 71px;
+      padding-bottom: 33px;
+    }
+
+    &__logo{
+      padding-top: 0px;
+      
+      &-img{
+        width: 96px;
+        height: 110px;
+      }
+    }
+
+    &__network{
+      padding-top: 52px;
+      padding-left: 8px;
+    }
+
+    &__categories{
+      padding-top: 48px;
+      padding-left: 0;
+    }
+
+    &__additional{
+      padding-top: 48px;
+      padding-left: 19px;
+    }
+
+    &__legal{
+      padding: 0;
+      padding-left: 52px;
+      padding-top: 48px;
+    }
+  
+    &__contacts{
+      padding-top: 60px;
+    }
+
+    &__locations-img{
+      padding-left: 4px;
+    }
+
+    &__contacts-img{
+      padding-left: 4px;
+    }
+
+    &__envelope-img{
+      margin-bottom: 7px;
+      margin-right: 0px;
+    }
+
+    &__send{
+      width: 539px;
+      padding-left: 0;
+      padding-top: 55px;
+    }
+
+    &__send-title{
+      padding-bottom: 1px;
+    }
+
+    &__send-name{
+      width: 255px;
+    }
+    
+    &__send-number{
+      width: 254px;
+    }
+
+    &__bottoms-text{
+      padding-top: 61px;
+      padding-left: 0px;
     }
   }
 }
@@ -274,6 +384,11 @@
       width: 200px;  
     }
   }
+
+  .footer__wrapper{   
+      grid-template-columns:  minmax(160px, 180px) 265px 1fr;
+      padding-bottom: 33px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -482,7 +597,7 @@
 
     &__slide-container{
       min-width: 281px;
-      padding-bottom: 13px;
+      padding-bottom: 34px;
     }
 
     &__text{
@@ -505,6 +620,7 @@
 
   .card{
     padding-top: 90px;
+    padding-bottom: 60px;
     
     &__other{
       font-weight: 700;
@@ -547,5 +663,156 @@
       width: 220px;
     }
   }   
+}
+
+@media (max-width: 750px) {
+  .footer{
+    &__wrapper{
+      grid-gap: 10px;
+      grid-template-columns: minmax(140px, 170px) 1fr 1fr;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__additional{
+      padding-left: 0;
+    }
+
+    &__legal{
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 556px) {
+  .footer{
+    &__wrapper{
+      grid-gap: 10px;
+      grid-template-columns: 1fr;
+      padding-left: 20px;
+      padding-right: 10px;
+      padding-top: 68px;
+      padding-bottom: 21px;
+      grid-template-areas: 
+      "logo" 
+      "network"
+      "legal"
+      "additional"
+      "categories"
+      "contacts"
+      "send"
+      "bottoms";
+    }
+
+    &__network{
+      flex-wrap: wrap;
+      margin-right: 40px;
+      padding-left: 0;
+      padding-top: 27px;
+
+      .footer__title{
+        margin-right: 10px;
+      }
+
+      &-title{
+        margin-bottom: 21px;
+      }
+
+      &-icon{
+        padding-left: 2px;
+      }
+    }
+
+    &__legal{
+      padding-top: 17px;
+    }
+
+    &__additional{
+      padding-top: 18px;
+    }
+
+    &__categories{
+      padding-top: 19px;
+    }
+    
+    &__contacts{
+      width: 100%;
+      padding-top: 31px;
+      
+      .footer__contacts-item:not(:last-child) {
+        margin-bottom: 21px;
+        }
+    }
+
+    &__contacts-icon{
+      margin-right: 7px;
+      justify-content: center;
+    }
+
+    &__contacts-text{
+      padding: 0;
+    }
+
+    &__locations-img{
+      width: 30px;
+      padding-left: 2px;
+      margin-bottom: 5px;
+    }
+
+    &__envelope-img{
+      height: 24px;
+    }
+   
+    &__send{
+      width: 96.5%;
+      padding-top: 41px;
+
+      .footer__title{
+        margin-bottom: 14px;
+      }
+
+      .footer__send-message{
+        margin-bottom: 12px;
+      }
+      .footer__btn-wrapper{
+        flex-direction:column-reverse;
+        align-items:flex-start;
+      }
+    }
+
+    &__send-name{
+      margin-bottom: 15px;
+    }
+
+    &__input-wrapper{
+      flex-wrap: wrap;
+    }
+
+    &__input{
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &__required{
+      margin-bottom: 15px;
+    }
+
+    &__bottoms{
+      flex-wrap: wrap;
+    }
+
+    &__bottoms-text{
+      padding-top: 20px;
+      
+      .footer__bottoms-item:not(:last-child) {
+        margin-right: 9px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__phone-contacts{
+      white-space: nowrap;
+    }
+  }
 }
 

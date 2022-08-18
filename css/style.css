@@ -336,6 +336,8 @@ button {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -813,7 +815,7 @@ ul {
   min-width: 732px;
   border-radius: 8px;
   background-color: #ffffff;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 .reviews__slide-container::before {
   content: url("../img/lefttop.svg");
@@ -892,6 +894,7 @@ ul {
 
 .card {
   padding-top: 129px;
+  padding-bottom: 97px;
 }
 .card__other {
   margin: 0px;
@@ -958,6 +961,225 @@ ul {
   background-color: #ec1f46;
 }
 
+.footer {
+  background-color: #0a223d;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 10px;
+  grid-template-areas: "logo categories additional legal" "logo categories network network" "contacts contacts send send" ". bottoms bottoms bottoms";
+  padding-top: 108px;
+  padding-bottom: 46px;
+}
+.footer__logo {
+  grid-area: logo;
+  padding-top: 29px;
+}
+.footer__categories {
+  grid-area: categories;
+  padding-left: 6px;
+}
+.footer__categories .footer__title {
+  margin-bottom: 16px;
+}
+.footer__additional {
+  grid-area: additional;
+  padding-left: 10px;
+}
+.footer__additional .footer__title {
+  margin-bottom: 15px;
+}
+.footer__network {
+  display: flex;
+  justify-content: flex-start;
+  grid-area: network;
+  padding-left: 10px;
+  padding-top: 13px;
+}
+.footer__network .footer__title {
+  margin-right: 43px;
+}
+.footer__network .footer__link:not(:last-child) {
+  margin-right: 10px;
+}
+.footer__legal {
+  grid-area: legal;
+  padding-left: 75px;
+}
+.footer__legal .footer__title {
+  margin-bottom: 15px;
+}
+.footer__contacts {
+  grid-area: contacts;
+  padding-top: 80px;
+}
+.footer__contacts .footer__title {
+  margin-bottom: 23px;
+}
+.footer__contacts .footer__contacts-subtitle {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__contacts .footer__contacts-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.footer__contacts-icon {
+  margin-right: 19px;
+}
+.footer__send {
+  grid-area: send;
+  padding-top: 70px;
+  padding-left: 9px;
+}
+.footer__send .footer__title {
+  margin-bottom: 33px;
+}
+.footer__send .footer__input-wrapper {
+  margin-bottom: 15px;
+}
+.footer__send .footer__send-message {
+  margin-bottom: 19px;
+}
+.footer__send .footer__btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__bottoms {
+  grid-area: bottoms;
+}
+.footer__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.footer__link, .footer__contacts-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
+}
+.footer__bottoms-item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.footer__contacts-item {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer__contacts-mail {
+  padding-top: 4px;
+}
+.footer__contacts-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 24px;
+  height: 30px;
+}
+.footer__locations-img {
+  width: 14px;
+  height: 19.47px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+.footer__contacts-img {
+  width: 23px;
+  height: 23px;
+  margin-bottom: 2px;
+}
+.footer__envelope-img {
+  width: 16.67px;
+  height: 13.33px;
+  margin-bottom: 6px;
+  margin-right: 3.5px;
+}
+.footer__input {
+  border: none;
+  border-radius: 4px;
+}
+.footer__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+.footer__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+.footer__input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+.footer__send-name {
+  width: 255px;
+  height: 50px;
+  padding: 0 23px;
+}
+.footer__send-number {
+  width: 254px;
+  height: 50px;
+  padding: 0 23px;
+}
+.footer__send-message {
+  resize: none;
+  padding: 18px 23px;
+  width: 539px;
+  height: 123px;
+}
+.footer__send-btn {
+  width: 160px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  background-color: #ec1f46;
+  border: none;
+  border-radius: 4px;
+}
+.footer__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__required {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+.footer__bottoms {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bottoms-text {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 92px;
+  padding-left: 132px;
+}
+.footer__bottoms-text .footer__bottoms-item:not(:last-child) {
+  margin-right: 13px;
+}
+.footer__bottoms-img {
+  width: 136px;
+  height: 22px;
+  align-self: flex-end;
+}
+
 @media (max-width: 1200px) {
   .container {
     padding: 0 50px;
@@ -986,6 +1208,22 @@ ul {
     width: 220px;
     height: 220px;
   }
+  .footer__contacts {
+    width: 100%;
+  }
+  .footer__send {
+    width: 100%;
+  }
+  .footer__send-message {
+    width: 100%;
+  }
+  .footer__send-name {
+    width: 100%;
+    margin-right: 15px;
+  }
+  .footer__send-number {
+    width: 100%;
+  }
 }
 @media (max-width: 992px) {
   .container {
@@ -997,6 +1235,9 @@ ul {
   .logo__img {
     width: 150px;
     height: 20px;
+  }
+  .card {
+    padding-bottom: 71px;
   }
   .card__wrapper {
     display: flex;
@@ -1018,6 +1259,68 @@ ul {
   }
   .card__text {
     width: 220px;
+  }
+  .footer__wrapper {
+    grid-gap: 1px;
+    grid-template-columns: 0.7fr 1.2fr 1fr;
+    grid-template-areas: "logo network network" "categories additional legal" "contacts contacts contacts" "send send send" "bottoms bottoms bottoms";
+    padding-top: 71px;
+    padding-bottom: 33px;
+  }
+  .footer__logo {
+    padding-top: 0px;
+  }
+  .footer__logo-img {
+    width: 96px;
+    height: 110px;
+  }
+  .footer__network {
+    padding-top: 52px;
+    padding-left: 8px;
+  }
+  .footer__categories {
+    padding-top: 48px;
+    padding-left: 0;
+  }
+  .footer__additional {
+    padding-top: 48px;
+    padding-left: 19px;
+  }
+  .footer__legal {
+    padding: 0;
+    padding-left: 52px;
+    padding-top: 48px;
+  }
+  .footer__contacts {
+    padding-top: 60px;
+  }
+  .footer__locations-img {
+    padding-left: 4px;
+  }
+  .footer__contacts-img {
+    padding-left: 4px;
+  }
+  .footer__envelope-img {
+    margin-bottom: 7px;
+    margin-right: 0px;
+  }
+  .footer__send {
+    width: 539px;
+    padding-left: 0;
+    padding-top: 55px;
+  }
+  .footer__send-title {
+    padding-bottom: 1px;
+  }
+  .footer__send-name {
+    width: 255px;
+  }
+  .footer__send-number {
+    width: 254px;
+  }
+  .footer__bottoms-text {
+    padding-top: 61px;
+    padding-left: 0px;
   }
 }
 @media (max-width: 768px) {
@@ -1163,6 +1466,10 @@ ul {
   }
   .card__text_golf {
     width: 200px;
+  }
+  .footer__wrapper {
+    grid-template-columns: minmax(160px, 180px) 265px 1fr;
+    padding-bottom: 33px;
   }
 }
 @media (max-width: 767px) {
@@ -1328,7 +1635,7 @@ ul {
   }
   .reviews__slide-container {
     min-width: 281px;
-    padding-bottom: 13px;
+    padding-bottom: 34px;
   }
   .reviews__text {
     width: 219px;
@@ -1346,6 +1653,7 @@ ul {
   }
   .card {
     padding-top: 90px;
+    padding-bottom: 60px;
   }
   .card__other {
     font-weight: 700;
@@ -1378,5 +1686,116 @@ ul {
   }
   .card__text_waterfall {
     width: 220px;
+  }
+}
+@media (max-width: 750px) {
+  .footer__wrapper {
+    grid-gap: 10px;
+    grid-template-columns: minmax(140px, 170px) 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer__additional {
+    padding-left: 0;
+  }
+  .footer__legal {
+    padding-left: 0;
+  }
+}
+@media (max-width: 556px) {
+  .footer__wrapper {
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 68px;
+    padding-bottom: 21px;
+    grid-template-areas: "logo" "network" "legal" "additional" "categories" "contacts" "send" "bottoms";
+  }
+  .footer__network {
+    flex-wrap: wrap;
+    margin-right: 40px;
+    padding-left: 0;
+    padding-top: 27px;
+  }
+  .footer__network .footer__title {
+    margin-right: 10px;
+  }
+  .footer__network-title {
+    margin-bottom: 21px;
+  }
+  .footer__network-icon {
+    padding-left: 2px;
+  }
+  .footer__legal {
+    padding-top: 17px;
+  }
+  .footer__additional {
+    padding-top: 18px;
+  }
+  .footer__categories {
+    padding-top: 19px;
+  }
+  .footer__contacts {
+    width: 100%;
+    padding-top: 31px;
+  }
+  .footer__contacts .footer__contacts-item:not(:last-child) {
+    margin-bottom: 21px;
+  }
+  .footer__contacts-icon {
+    margin-right: 7px;
+    justify-content: center;
+  }
+  .footer__contacts-text {
+    padding: 0;
+  }
+  .footer__locations-img {
+    width: 30px;
+    padding-left: 2px;
+    margin-bottom: 5px;
+  }
+  .footer__envelope-img {
+    height: 24px;
+  }
+  .footer__send {
+    width: 96.5%;
+    padding-top: 41px;
+  }
+  .footer__send .footer__title {
+    margin-bottom: 14px;
+  }
+  .footer__send .footer__send-message {
+    margin-bottom: 12px;
+  }
+  .footer__send .footer__btn-wrapper {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .footer__send-name {
+    margin-bottom: 15px;
+  }
+  .footer__input-wrapper {
+    flex-wrap: wrap;
+  }
+  .footer__input {
+    width: 100%;
+    margin-right: 0;
+  }
+  .footer__required {
+    margin-bottom: 15px;
+  }
+  .footer__bottoms {
+    flex-wrap: wrap;
+  }
+  .footer__bottoms-text {
+    padding-top: 20px;
+  }
+  .footer__bottoms-text .footer__bottoms-item:not(:last-child) {
+    margin-right: 9px;
+    margin-bottom: 10px;
+  }
+  .footer__phone-contacts {
+    white-space: nowrap;
   }
 }/*# sourceMappingURL=style.css.map */
