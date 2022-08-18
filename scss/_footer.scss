@@ -3,8 +3,8 @@
 
   &__wrapper{
     display: grid;
-    grid-template-columns: max(260px) max(280px) max(320px) 1fr;
-    grid-template-rows: 185px 50px 370px 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, auto);
     grid-gap: 10px;
     grid-template-areas: 
     "logo categories additional legal"
@@ -12,19 +12,17 @@
     "contacts contacts send send"
     ". bottoms bottoms bottoms";
     padding-top: 108px;
-    padding-bottom: 102px;
+    padding-bottom: 46px;
   }
 
   &__logo{
     grid-area: logo;
-    align-self: flex-end;
-    margin-bottom: 37px;
+    padding-top: 29px;
   }
 
   &__categories{
     grid-area: categories;
-    padding-left: 15px;
-
+    padding-left: 6px;
 
     .footer__title{
       margin-bottom: 16px;
@@ -45,6 +43,7 @@
     justify-content: flex-start;
     grid-area: network;
     padding-left: 10px;
+    padding-top: 13px;
     
     .footer__title{
       margin-right: 43px;
@@ -54,11 +53,10 @@
     margin-right: 10px;
     }
   }  
-  
 
   &__legal{
     grid-area: legal;
-    padding-left: 26px;
+    padding-left: 75px;
 
     .footer__title{
       margin-bottom: 15px;
@@ -67,7 +65,7 @@
 
   &__contacts{
     grid-area: contacts;
-    padding-top: 69px;
+    padding-top: 80px;
 
     .footer__title{
       margin-bottom: 23px;
@@ -80,15 +78,16 @@
 
     .footer__contacts-item:not(:last-child) {
       margin-bottom: 16px;
-      }
-    .footer__contacts-icon:not(:last-child) {
+    }
+      
+    &-icon {
       margin-right: 19px;
-      }
+    }
   }
 
   &__send{
     grid-area: send;
-    padding-top: 58px;
+    padding-top: 70px;
     padding-left: 9px;
 
     .footer__title{
@@ -100,7 +99,7 @@
     }
 
     .footer__send-message{
-      margin-bottom: 18px;
+      margin-bottom: 19px;
     }
 
     .footer__btn-wrapper{
@@ -118,6 +117,7 @@
     margin: 0;
     padding: 0;
   }
+
   &__title{
     margin: 0;
     font-weight: 700;
@@ -225,6 +225,7 @@
     display: flex;
     justify-content: space-between;
   }
+
   &__required{
     font-weight: 700;
     font-size: 12px;
@@ -235,16 +236,23 @@
   &__bottoms{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 46px;
   }
+
   &__bottoms-text{
     display: flex;
     margin: 0;
     padding: 0;
+    padding-top: 92px;
+    padding-left: 132px;
+
+    .footer__bottoms-item:not(:last-child) {
+      margin-right: 13px;
+    }
   }
+
   &__bottoms-img{
     width: 136px;
     height: 22px;
+    align-self: flex-end;
   }
-
 }
