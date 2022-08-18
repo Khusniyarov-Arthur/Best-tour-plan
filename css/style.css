@@ -336,6 +336,8 @@ button {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -1047,10 +1049,6 @@ ul {
 }
 .footer__bottoms {
   grid-area: bottoms;
-}
-.footer__list {
-  margin: 0;
-  padding: 0;
 }
 .footer__title {
   margin: 0;

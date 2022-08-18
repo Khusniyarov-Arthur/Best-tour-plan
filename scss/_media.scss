@@ -668,10 +668,10 @@
 @media (max-width: 750px) {
   .footer{
     &__wrapper{
-    grid-gap: 10px;
-    grid-template-columns: minmax(140px, 170px) 1fr 1fr;
-    padding-left: 10px;
-    padding-right: 10px;
+      grid-gap: 10px;
+      grid-template-columns: minmax(140px, 170px) 1fr 1fr;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     &__additional{
@@ -687,21 +687,21 @@
 @media (max-width: 556px) {
   .footer{
     &__wrapper{
-    grid-gap: 10px;
-    grid-template-columns: 1fr;
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-top: 68px;
-    padding-bottom: 21px;
-    grid-template-areas: 
-    "logo" 
-    "network"
-    "legal"
-    "additional"
-    "categories"
-    "contacts"
-    "send"
-    "bottoms";
+      grid-gap: 10px;
+      grid-template-columns: 1fr;
+      padding-left: 20px;
+      padding-right: 10px;
+      padding-top: 68px;
+      padding-bottom: 21px;
+      grid-template-areas: 
+      "logo" 
+      "network"
+      "legal"
+      "additional"
+      "categories"
+      "contacts"
+      "send"
+      "bottoms";
     }
 
     &__network{
