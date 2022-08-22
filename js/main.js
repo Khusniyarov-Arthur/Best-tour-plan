@@ -35,7 +35,6 @@ const swiper = new Swiper('.swiper', {
  var menuButton = document.querySelector(".menu-btn");
  menuButton.addEventListener("click", function () {
   console.log("Клик по кнопке");
-  document
-  .querySelector(".nav")
-  .classList.toggle("nav_visible");
- })
+  document.querySelector(".nav").classList.toggle("nav_visible")
+  document.querySelector("body").classList.toggle("lock")
+ });
