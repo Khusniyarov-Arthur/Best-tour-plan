@@ -31,5 +31,11 @@ const swiper = new Swiper('.swiper', {
   },
  });
 
- 
- 
+const menuButton = document.querySelector('.menu-btn');
+const navigation = document.querySelector('.nav');
+const body = document.querySelector("body");
+
+menuButton.addEventListener('click', () => {
+  navigation.classList.toggle('nav_visible');
+  body.classList.toggle("lock");
+});
