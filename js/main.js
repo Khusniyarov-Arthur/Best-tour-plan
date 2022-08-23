@@ -31,10 +31,11 @@ const swiper = new Swiper('.swiper', {
   },
  });
 
- 
- var menuButton = document.querySelector(".menu-btn");
- menuButton.addEventListener("click", function () {
-  console.log("Клик по кнопке");
-  document.querySelector(".nav").classList.toggle("nav_visible")
-  document.querySelector("body").classList.toggle("lock")
- });
+const menuButton = document.querySelector('.menu-btn');
+const navigation = document.querySelector('.nav');
+const body = document.querySelector("body");
+
+menuButton.addEventListener('click', () => {
+  navigation.classList.toggle('nav_visible');
+  body.classList.toggle("lock");
+});
