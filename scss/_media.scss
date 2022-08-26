@@ -404,10 +404,6 @@
     padding-top: 71px;
   }
 
-  .lock{
-    overflow: hidden;
-  }
-
   .nav {
     display: none;
 
@@ -888,5 +884,53 @@
       white-space: nowrap;
     }
   }
+
+  .model{
+    &__wrapper{
+      padding: 33px 40px;
+      max-width: 350px;
+    }
+
+    &__send-btn{
+      width: 120px;
+    }
+  }
 }
 
+@media  (max-width: 390px) {
+  .model{
+    &__wrapper{
+      padding: 33px 40px;
+      max-width: 350px;
+    }
+
+    &__img {
+      width: 70%;
+      height: 70%;
+    }
+
+    &__send-title{
+      font-size: 14px;
+    }
+
+    &__send-btn{
+      width: 100px;
+      height: 40px;
+    }
+
+    &__send-input{
+      margin-bottom: 7px;
+      padding: 8px;
+    }
+
+    &__send-message{
+      margin-bottom: 10px;
+      padding: 10px;
+      min-height: 60px;
+    }
+
+    &__required{
+      font-size: 10px;
+    }
+  }
+}

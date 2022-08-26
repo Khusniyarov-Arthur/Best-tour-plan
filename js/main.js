@@ -39,3 +39,25 @@ menuButton.addEventListener('click', () => {
   navigation.classList.toggle('nav_visible');
   body.classList.toggle("lock");
 });
+
+const modelButton = document.querySelector('.booking__button');
+const model = document.querySelector('.model');
+const modelClose = document.querySelector('.model__close');
+
+modelButton.addEventListener('click', () => {
+  model.classList.toggle('model_visible');
+  body.classList.toggle("lock");
+});
+
+modelClose.addEventListener('click', () => {
+  model.classList.toggle('model_visible');
+  body.classList.toggle("lock");
+});
+
+
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Escape') {
+    model.classList.remove('model_visible');
+    body.classList.remove("lock");
+  }
+});
