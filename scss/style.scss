@@ -29,7 +29,10 @@
 @import "./footer";
 
 // Подключение модального окна
-@import "./model";
+@import "./modal";
+
+// Подключение тестовой формы валидации
+@import "./validation";
 
 // Подключение медиа запросов
 @import "./media";

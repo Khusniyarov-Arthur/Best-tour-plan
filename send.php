@@ -29,14 +29,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'king_mailer@mail.ru'; // Логин на почте
-    $mail->Password   = 'A0fAcsmiHLb0aX4grz3i'; // Пароль на почте
+    $mail->Username   = 'king_lion@mail.ru'; // Логин на почте
+    $mail->Password   = 'A0fAcsm'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('king_mailer@mail.ru', 'King Mailer'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('king_lion@mail.ru', 'King lion'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('king_aptyp@mail.ru');  
+    $mail->addAddress('king_lion@mail.ru');  
     // Ещё один, если нужен
 
      

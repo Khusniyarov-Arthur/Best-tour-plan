@@ -885,7 +885,7 @@
     }
   }
 
-  .model{
+  .modal{
     &__wrapper{
       padding: 33px 40px;
       max-width: 350px;
@@ -898,7 +898,7 @@
 }
 
 @media  (max-width: 390px) {
-  .model{
+  .modal{
     &__wrapper{
       padding: 33px 40px;
       max-width: 350px;

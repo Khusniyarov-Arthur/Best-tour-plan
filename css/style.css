@@ -1184,7 +1184,7 @@ ul {
   align-self: flex-end;
 }
 
-.model {
+.modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -1195,10 +1195,10 @@ ul {
   background: rgba(0, 143, 223, 0.39);
   visibility: hidden;
 }
-.model_visible {
+.modal_visible {
   visibility: visible;
 }
-.model__wrapper {
+.modal__wrapper {
   position: relative;
   top: 50%;
   left: 50%;
@@ -1211,12 +1211,12 @@ ul {
   border-radius: 8px;
   overflow-y: auto;
 }
-.model__close {
+.modal__close {
   position: absolute;
   top: 17px;
   right: 16px;
 }
-.model__send-title {
+.modal__send-title {
   text-align: center;
   margin: 0 0 15px 0;
   font-weight: 700;
@@ -1225,35 +1225,35 @@ ul {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.model__close {
+.modal__close {
   cursor: pointer;
 }
-.model__send-input {
+.modal__send-input {
   width: 100%;
   margin-bottom: 15px;
   padding: 17px 23px 14.5px 23px;
   border-radius: 4px;
   border: none;
 }
-.model__send-input::-moz-placeholder {
+.modal__send-input::-moz-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
 }
-.model__send-input:-ms-input-placeholder {
+.modal__send-input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
 }
-.model__send-input::placeholder {
+.modal__send-input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
 }
-.model__send-message {
+.modal__send-message {
   margin-bottom: 12px;
   padding: 18px 23px;
   border-radius: 4px;
@@ -1261,30 +1261,30 @@ ul {
   width: 100%;
   min-height: 123px;
 }
-.model__send-message::-moz-placeholder {
+.modal__send-message::-moz-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
 }
-.model__send-message:-ms-input-placeholder {
+.modal__send-message:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
 }
-.model__send-message::placeholder {
+.modal__send-message::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
 }
-.model__btn-wrapper {
+.modal__btn-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.model__send-btn {
+.modal__send-btn {
   width: 160px;
   height: 50px;
   font-weight: 700;
@@ -1295,11 +1295,83 @@ ul {
   border: none;
   border-radius: 4px;
 }
-.model__required {
+.modal__required {
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  width: 300px;
+}
+
+.form__group {
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  outline: 0;
+}
+
+.input.error {
+  border-color: red;
+}
+
+.input::-moz-placeholder {
+  color: #ccc;
+}
+
+.input:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.input::placeholder {
+  color: #ccc;
+}
+
+.checkbox__label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkbox__input.error + .checkbox__label {
+  color: red;
+}
+
+.btn {
+  height: 30px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e335e;
+  border: 0;
+  width: 100%;
+  outline: 0;
+  cursor: pointer;
+  color: #fff;
 }
 
 @media (max-width: 1200px) {
@@ -1978,40 +2050,40 @@ ul {
   .footer__phone-contacts {
     white-space: nowrap;
   }
-  .model__wrapper {
+  .modal__wrapper {
     padding: 33px 40px;
     max-width: 350px;
   }
-  .model__send-btn {
+  .modal__send-btn {
     width: 120px;
   }
 }
 @media (max-width: 390px) {
-  .model__wrapper {
+  .modal__wrapper {
     padding: 33px 40px;
     max-width: 350px;
   }
-  .model__img {
+  .modal__img {
     width: 70%;
     height: 70%;
   }
-  .model__send-title {
+  .modal__send-title {
     font-size: 14px;
   }
-  .model__send-btn {
+  .modal__send-btn {
     width: 100px;
     height: 40px;
   }
-  .model__send-input {
+  .modal__send-input {
     margin-bottom: 7px;
     padding: 8px;
   }
-  .model__send-message {
+  .modal__send-message {
     margin-bottom: 10px;
     padding: 10px;
     min-height: 60px;
   }
-  .model__required {
+  .modal__required {
     font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

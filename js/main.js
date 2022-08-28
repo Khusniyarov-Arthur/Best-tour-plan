@@ -40,24 +40,25 @@ menuButton.addEventListener('click', () => {
   body.classList.toggle("lock");
 });
 
-const modelButton = document.querySelector('.booking__button');
-const model = document.querySelector('.model');
-const modelClose = document.querySelector('.model__close');
+const modalButton = document.querySelector('.booking__button');
+const modal = document.querySelector('.modal');
+const modalClose = document.querySelector('.modal__close');
 
-modelButton.addEventListener('click', () => {
-  model.classList.toggle('model_visible');
-  body.classList.toggle("lock");
+modalButton.addEventListener('click', () => {
+  modal.classList.add('modal_visible');
+  body.classList.add("lock");
 });
 
-modelClose.addEventListener('click', () => {
-  model.classList.toggle('model_visible');
-  body.classList.toggle("lock");
+modalClose.addEventListener('click', () => {
+  modal.classList.remove('modal_visible');
+  body.classList.remove("lock");
 });
 
 
 document.addEventListener('keydown', (e) => {
   if (e.code === 'Escape') {
-    model.classList.remove('model_visible');
+    modal.classList.remove('modal_visible');
     body.classList.remove("lock");
   }
 });
+
