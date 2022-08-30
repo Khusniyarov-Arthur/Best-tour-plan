@@ -340,6 +340,10 @@ ul {
   padding: 0;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .header {
   background-color: #ffffff;
 }
@@ -1180,6 +1184,196 @@ ul {
   align-self: flex-end;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0 20px;
+  background: rgba(0, 143, 223, 0.39);
+  visibility: hidden;
+}
+.modal_visible {
+  visibility: visible;
+}
+.modal__wrapper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  padding: 33px 88px;
+  background-color: #0a223d;
+  max-width: 477.5px;
+  max-height: 95%;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+.modal__close {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+}
+.modal__send-title {
+  text-align: center;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.modal__close {
+  cursor: pointer;
+}
+.modal__send-input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 17px 23px 14.5px 23px;
+  border-radius: 4px;
+  border: none;
+}
+.modal__send-input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+.modal__send-input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+.modal__send-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+.modal__send-message {
+  margin-bottom: 12px;
+  padding: 18px 23px;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+  min-height: 123px;
+}
+.modal__send-message::-moz-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+.modal__send-message:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+.modal__send-message::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+.modal__btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__send-btn {
+  width: 160px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  background-color: #ec1f46;
+  border: none;
+  border-radius: 4px;
+}
+.modal__required {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  width: 300px;
+}
+
+.form__group {
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  outline: 0;
+}
+
+.input.error {
+  border-color: red;
+}
+
+.input::-moz-placeholder {
+  color: #ccc;
+}
+
+.input:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.input::placeholder {
+  color: #ccc;
+}
+
+.checkbox__label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkbox__input.error + .checkbox__label {
+  color: red;
+}
+
+.btn {
+  height: 30px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e335e;
+  border: 0;
+  width: 100%;
+  outline: 0;
+  cursor: pointer;
+  color: #fff;
+}
+
 @media (max-width: 1200px) {
   .container {
     padding: 0 50px;
@@ -1480,9 +1674,6 @@ ul {
 @media (max-width: 767px) {
   body {
     padding-top: 71px;
-  }
-  .lock {
-    overflow: hidden;
   }
   .nav {
     display: none;
@@ -1858,5 +2049,41 @@ ul {
   }
   .footer__phone-contacts {
     white-space: nowrap;
+  }
+  .modal__wrapper {
+    padding: 33px 40px;
+    max-width: 350px;
+  }
+  .modal__send-btn {
+    width: 120px;
+  }
+}
+@media (max-width: 390px) {
+  .modal__wrapper {
+    padding: 33px 40px;
+    max-width: 350px;
+  }
+  .modal__img {
+    width: 70%;
+    height: 70%;
+  }
+  .modal__send-title {
+    font-size: 14px;
+  }
+  .modal__send-btn {
+    width: 100px;
+    height: 40px;
+  }
+  .modal__send-input {
+    margin-bottom: 7px;
+    padding: 8px;
+  }
+  .modal__send-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    min-height: 60px;
+  }
+  .modal__required {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

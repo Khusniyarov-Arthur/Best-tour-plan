@@ -39,3 +39,26 @@ menuButton.addEventListener('click', () => {
   navigation.classList.toggle('nav_visible');
   body.classList.toggle("lock");
 });
+
+const modalButton = document.querySelector('.booking__button');
+const modal = document.querySelector('.modal');
+const modalClose = document.querySelector('.modal__close');
+
+modalButton.addEventListener('click', () => {
+  modal.classList.add('modal_visible');
+  body.classList.add("lock");
+});
+
+modalClose.addEventListener('click', () => {
+  modal.classList.remove('modal_visible');
+  body.classList.remove("lock");
+});
+
+
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Escape') {
+    modal.classList.remove('modal_visible');
+    body.classList.remove("lock");
+  }
+});
+
