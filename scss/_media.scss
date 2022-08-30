@@ -23,10 +23,10 @@
     margin-bottom: 0;
 
     &__wrapper{
-    display: flex;
-    justify-content: space-between;
-    width: 728px; 
-    margin: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 728px; 
+      margin: 0;
     }
   }
 
@@ -42,6 +42,10 @@
       width: 100%;
     }
 
+    &__input-group{
+      width: 47%;
+    }
+
     &__send{
       width: 100%;
     }
@@ -52,7 +56,6 @@
 
     &__send-name{
       width: 100%;
-      margin-right: 15px;
     }
     
     &__send-number{
@@ -646,7 +649,9 @@
     }
 
     &__input{
+      width: 215px;
       padding: 0 20px;
+      
     }
   }
 
@@ -850,8 +855,9 @@
       }
     }
 
-    &__send-name{
+    &__input-group{
       margin-bottom: 15px;
+      width: 100%;
     }
 
     &__input-wrapper{
