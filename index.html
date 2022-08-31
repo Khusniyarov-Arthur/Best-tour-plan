@@ -206,8 +206,11 @@
           </h2>          
         </div>
 
-        <form action="#" class="newsletter__send">
-          <input type="text" class="newsletter__input newsletter_input_size_s" placeholder="Your email address"/>
+        <form action="#" class="newsletter__send js-valnewsletter" novalidate>
+          <div class="newsletter__lable">
+            <input type="email" class="newsletter__input newsletter_input_size_s js-valnewsletter-mail" placeholder="Your email address" name="email"/>
+          </div>
+          
           <button class="newsletter__button">Send</button>
         </form>
       </div>
@@ -216,7 +219,6 @@
     <section class="reviews">
       <div class="container">
       <h2 class="reviews__thinks">What people think about us</h2>
-      
       <div class="slider-container">
         <div class="swiper   reviews__swiper">            
           <div class="swiper-wrapper reviews__swiper-wrapper">  
@@ -497,10 +499,15 @@
 
           <div class="footer__send">
             <h3 class="footer__send-title footer__title">send us a massage</h3>
-            <form action="send.php" method="POST" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form js-valfooter">
               <div class="footer__input-wrapper">
-                <input type="text" class="footer__send-name footer__input" placeholder="Your Full Name*" name="name">
-                <input type="text" class="footer__send-number footer__input" placeholder="Phone Number*" name="phone">
+                <div class="footer__input-group">
+                 <input type="text" class="footer__send-name footer__input js-valfooter-name" placeholder="Your Full Name*" name="name">
+                </div>  
+                
+                <div class="footer__input-group">
+                  <input type="tel" class="footer__send-number footer__input js-valfooter-number" placeholder="Phone Number*" name="phone">
+                </div>    
               </div>
             
               <textarea class="footer__send-message footer__input" placeholder="Message" name="message"></textarea>
@@ -529,23 +536,36 @@
         <div  class="modal__close">
           <img src="./img/close.svg" alt="close batton" class="modal__img">
         </div>
+       
         <h3 class="modal__send-title">booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
+      
+        <form action="send.php" method="POST" class="modal__form js-validate" novalidate>
           <div class="modal__input-wrapper">
-            <input type="text" class="modal__send-name modal__send-input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="modal__send-number modal__send-input" placeholder="Phone Number*" name="phone">
-            <input type="text" class="modal__send-mail modal__send-input" placeholder="Email*">
+            <div class="modal__input-group">
+              <input type="text" class="modal__send-name modal__send-input js-validate-name js-input" placeholder="Your Full Name*" name="name">
+            </div>
+              
+            <div class="modal__input-group">
+              <input type="tel" class="modal__send-number modal__send-input js-validate-number js-input js-input-phone" placeholder="Phone Number*" name="phone">
+            </div>
+              
+            <div class="modal__input-group">
+              <input type="email" class="modal__send-mail modal__send-input js-validate-mail js-input js-input-email" placeholder="Email*">
+            </div>
+           
             <textarea class="modal__send-message" placeholder="Message" name="message"></textarea>
           </div>
         
           <div class="modal__btn-wrapper">
-            <button class="modal__send-btn ">Send</button>
+            <button type="submit" class="modal__send-btn ">Send</button>
             <span class="modal__required">* Required Fields</span>
           </div>
         </form>
       </div>
     </div>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/just-validate3.3.3.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

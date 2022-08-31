@@ -62,3 +62,114 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+// Валидация modal
+// inputmask
+const form = document.querySelector('.js-validate');
+const telSelector = form.querySelector('input[type="tel"]');
+const inputMask = new Inputmask('+7 (999) 999-99-99');
+inputMask.mask(telSelector);
+const validation = new JustValidate('.js-validate');
+
+validation
+  .addField('.js-validate-name', [
+
+    {
+      rule: 'minLength',
+      value: 3,
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+    },
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Enter your name!'
+    }
+  ])
+  .addField('.js-validate-mail', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Email is required',
+    },
+    {
+      rule: 'email',
+      value: true,
+      errorMessage: 'Please enter a valid Email',
+    },
+  ])
+  .addField('.js-validate-number', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Phone required',
+    },
+    {
+      rule: 'function',
+      validator: function() {
+        const phone = telSelector.inputmask.unmaskedvalue();
+        return phone.length === 10;
+      },
+      errorMessage: 'Please enter a valid phone number',
+    },
+]);
+
+// Валидация Newsletter
+// const formw = document.querySelector('.js-valnewsletter');
+const validationNewsletter = new JustValidate('.js-valnewsletter');
+
+validationNewsletter
+  .addField('.js-valnewsletter-mail', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Email is required',
+    },
+    {
+      rule: 'email',
+      value: true,
+      errorMessage: 'Please enter a valid Email',
+    },
+  ]);
+ 
+// Валидация в footer
+// inputmask
+const formFooter = document.querySelector('.js-valfooter');
+const telSelectorFooter = formFooter.querySelector('input[type="tel"]');
+const inputMaskFooter = new Inputmask('+7 (999) 999-99-99');
+inputMaskFooter.mask(telSelectorFooter);
+const validationFooter = new JustValidate('.js-valfooter');
+
+validationFooter
+  .addField('.js-valfooter-name', [
+
+    {
+      rule: 'minLength',
+      value: 3,
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+    },
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Enter your name!'
+    },
+  ])
+  .addField('.js-valfooter-number', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Phone required',
+    },
+    {
+      rule: 'function',
+      validator: function() {
+        const phone = telSelectorFooter.inputmask.unmaskedvalue();
+        return phone.length === 10;
+      },
+      errorMessage: 'Please enter a valid phone number',
+    },
+  ]);
