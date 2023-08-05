@@ -393,9 +393,6 @@ ul {
 .search__input_size_s::-moz-placeholder {
   color: #333333;
 }
-.search__input_size_s:-ms-input-placeholder {
-  color: #333333;
-}
 .search__input_size_s::placeholder {
   color: #333333;
 }
@@ -783,9 +780,6 @@ ul {
 .newsletter__input_size_s::-moz-placeholder {
   color: #BDBDBD;
 }
-.newsletter__input_size_s:-ms-input-placeholder {
-  color: #BDBDBD;
-}
 .newsletter__input_size_s::placeholder {
   color: #BDBDBD;
 }
@@ -1114,12 +1108,6 @@ ul {
   line-height: 15px;
   color: #BDBDBD;
 }
-.footer__input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
 .footer__input::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -1242,12 +1230,6 @@ ul {
   line-height: 15px;
   color: #BDBDBD;
 }
-.modal__send-input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
 .modal__send-input::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -1263,12 +1245,6 @@ ul {
   min-height: 123px;
 }
 .modal__send-message::-moz-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-.modal__send-message:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -1783,8 +1759,8 @@ ul {
     width: 235px;
   }
   .map {
+    margin-left: 5px;
     width: 279px;
-    height: 173px;
   }
   .newsletter {
     padding-top: 50px;
