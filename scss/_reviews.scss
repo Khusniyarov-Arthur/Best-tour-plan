@@ -1,0 +1,109 @@
+.reviews{
+    &__thinks{
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-color;
+  }
+  
+  &__swiper__slide{   
+    display: flex;
+    justify-content: center;
+    padding-top: 115px;
+  }
+
+  &__slide-container{  
+    position: relative;
+    min-width: 732px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding-bottom: 30px;
+
+    &::before{
+      content: url('../img/lefttop.svg');          
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1100;
+      top: 13px;
+      left: 45px;
+    }
+
+    &::after{
+      content: url("../img/rightbottom.svg");        
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1000;
+      top: 120px;
+      left: 580px;
+    } 
+  }  
+
+  &__wrapper-user{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: -45px;
+  }
+
+  &__photo{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 9px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #EC1F46;
+  }
+
+  &__date{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: #000000;
+  }
+
+  &__stars-img{
+    margin-right: -2.5px;
+  }
+
+  &__text{
+    margin: 0 auto;
+    padding-top: 26px;
+    max-width: 537px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    color: $text-color;
+    word-spacing: 2px;
+  }
+
+  &__button_swiper{
+    width: 30px;
+    height: 30px;   
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    background-position: center;
+  }
+
+  &__buton-right{
+    background-image: url("../img/chevron-right-review.svg");
+    transform: translatey(95%);
+    right: 17px;
+  }
+
+  &__buton-left{
+    background-image: url("../img/chevron-left-review.svg");
+    transform: translatey(95%);
+    left: 19px;
+  }
+}

@@ -1,0 +1,253 @@
+.footer{
+  background-color: $background-nav;
+
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "logo categories additional legal"
+    "logo categories network network"
+    "contacts contacts send send"
+    ". bottoms bottoms bottoms";
+    padding-top: 108px;
+    padding-bottom: 46px;
+  }
+
+  &__logo{
+    grid-area: logo;
+    padding-top: 29px;
+  }
+
+  &__categories{
+    grid-area: categories;
+    padding-left: 6px;
+
+    .footer__title{
+      margin-bottom: 16px;
+    }
+  }
+
+  &__additional{
+    grid-area: additional;
+    padding-left: 10px;
+
+    .footer__title{
+      margin-bottom: 15px;
+    }
+  }
+
+  &__network{
+    display: flex;
+    justify-content: flex-start;
+    grid-area: network;
+    padding-left: 10px;
+    padding-top: 13px;
+    
+    .footer__title{
+      margin-right: 43px;
+    }  
+      
+    .footer__link:not(:last-child) {
+      margin-right: 10px;
+    }
+  }  
+
+  &__legal{
+    grid-area: legal;
+    padding-left: 75px;
+
+    .footer__title{
+      margin-bottom: 15px;
+    }
+  }
+
+  &__contacts{
+    grid-area: contacts;
+    padding-top: 80px;
+
+    .footer__title{
+      margin-bottom: 23px;
+    }
+
+    .footer__contacts-subtitle{
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .footer__contacts-item:not(:last-child) {
+      margin-bottom: 16px;
+    }
+      
+    &-icon {
+      margin-right: 19px;
+    }
+  }
+
+  &__send{
+    grid-area: send;
+    padding-top: 70px;
+    padding-left: 9px;
+
+    .footer__title{
+      margin-bottom: 33px;
+    }
+
+    .footer__input-group{
+      margin-bottom: 15px;
+    }
+
+    .footer__send-message{
+      margin-bottom: 19px;
+    }
+
+    .footer__btn-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__bottoms{
+    grid-area: bottoms;
+  }
+
+  &__title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__link, &__contacts-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #BDBDBD;
+  }
+
+  &__bottoms-item{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+  }
+
+   &__contacts-item{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__contacts-mail{
+    padding-top: 4px;
+  }
+
+  &__contacts-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 24px;
+    height: 30px;
+  }
+
+  &__locations-img{
+    width: 14px;
+    height: 19.47px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+
+  &__contacts-img{
+    width: 23px;
+    height: 23px;
+    margin-bottom: 2px;
+  }
+
+  &__envelope-img{
+    width: 16.67px;
+    height: 13.33px;
+    margin-bottom: 6px;
+    margin-right: 3.5px;
+  }
+
+  &__input{
+    border: none;
+    border-radius: 4px;
+    
+    &::placeholder{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #BDBDBD;
+    }
+  }
+
+  &__send-name{
+    width: 255px;
+    height: 50px;
+    padding: 0 23px;
+  }
+
+  &__send-number{
+    width: 254px;
+    height: 50px;
+    padding: 0 23px;
+  }
+
+  &__send-message{
+    resize: none;
+    padding: 18px 23px;
+    width: 539px;
+    height: 123px;
+  }
+
+  &__send-btn{
+    width: 160px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background-color: $preamery-color;
+    border: none;
+    border-radius: 4px;
+  }
+
+  &__input-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__required{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #E0E0E0;
+  }
+
+  &__bottoms{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottoms-text{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 92px;
+    padding-left: 132px;
+
+    .footer__bottoms-item:not(:last-child) {
+      margin-right: 13px;
+    }
+  }
+
+  &__bottoms-img{
+    width: 136px;
+    height: 22px;
+    align-self: flex-end;
+  }
+}

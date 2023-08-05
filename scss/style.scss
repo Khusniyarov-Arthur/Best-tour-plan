@@ -1,0 +1,35 @@
+// Подключение normalize
+@import "./normalize";
+
+// Подключение переменных
+@import "./variables";
+
+// Подключение настроек
+@import "./settings";
+
+//Подключение Header
+@import "./block/header";
+
+// Подключение Breadcrumb
+@import "./breadcrumb";
+
+// Подключение секции hotel
+@import "./hotel";
+
+// Подключение форма с отправкой данных
+@import "./newsletter";
+
+// Подключение блока с отзывами
+@import "./reviews";
+
+// Подключение блока с отзывами
+@import "./activities";
+
+// Подключение блока footer
+@import "./footer";
+
+// Подключение модального окна
+@import "./modal";
+
+// Подключение медиа запросов
+@import "./media";

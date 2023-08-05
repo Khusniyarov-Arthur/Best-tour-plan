@@ -1,0 +1,943 @@
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .logo {
+    margin-right: 50px;
+  }
+
+  .grid {
+    &__swiper {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .booking {
+    margin-bottom: 0;
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 728px;
+      margin: 0;
+    }
+  }
+
+  .card {
+    &__activity {
+      width: 220px;
+      height: 220px;
+    }
+  }
+
+  .footer {
+    &__contacts {
+      width: 100%;
+    }
+
+    &__input-group {
+      width: 47%;
+    }
+
+    &__send {
+      width: 100%;
+    }
+
+    &__send-message {
+      width: 100%;
+    }
+
+    &__send-name {
+      width: 100%;
+    }
+
+    &__send-number {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .nav__link {
+    font-size: 12px;
+  }
+
+  .logo__img {
+    width: 150px;
+    height: 20px;
+  }
+
+  .card {
+    padding-bottom: 71px;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+
+    &__activity {
+      width: 49%;
+      height: 255px;
+    }
+
+    &__activity_bar {
+      margin-bottom: 20px;
+    }
+
+    &__activity_golf {
+      margin-bottom: 20px;
+    }
+
+    &__button {
+      padding: 7px 20px;
+    }
+
+    &__text {
+      width: 220px;
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      grid-gap: 1px;
+      grid-template-columns: 0.7fr 1.2fr 1fr;
+      grid-template-areas:
+        "logo network network"
+        "categories additional legal"
+        "contacts contacts contacts"
+        "send send send"
+        "bottoms bottoms bottoms";
+      padding-top: 71px;
+      padding-bottom: 33px;
+    }
+
+    &__logo {
+      padding-top: 0px;
+
+      &-img {
+        width: 96px;
+        height: 110px;
+      }
+    }
+
+    &__network {
+      padding-top: 52px;
+      padding-left: 8px;
+    }
+
+    &__categories {
+      padding-top: 48px;
+      padding-left: 0;
+    }
+
+    &__additional {
+      padding-top: 48px;
+      padding-left: 19px;
+    }
+
+    &__legal {
+      padding: 0;
+      padding-left: 52px;
+      padding-top: 48px;
+    }
+
+    &__contacts {
+      padding-top: 60px;
+    }
+
+    &__locations-img {
+      padding-left: 4px;
+    }
+
+    &__contacts-img {
+      padding-left: 4px;
+    }
+
+    &__envelope-img {
+      margin-bottom: 7px;
+      margin-right: 0px;
+    }
+
+    &__send {
+      width: 539px;
+      padding-left: 0;
+      padding-top: 55px;
+    }
+
+    &__send-title {
+      padding-bottom: 1px;
+    }
+
+    &__send-name {
+      width: 255px;
+    }
+
+    &__send-number {
+      width: 254px;
+    }
+
+    &__bottoms-text {
+      padding-top: 61px;
+      padding-left: 0px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px;
+    padding: 0;
+  }
+
+  .header {
+    &-top {
+      padding: 30px 0;
+    }
+
+    &__search {
+      width: 340px;
+      margin-right: 49px;
+    }
+  }
+
+  .logo {
+    margin-right: 23px;
+  }
+
+  .logo__img {
+    width: 132.75px;
+    height: 18px;
+  }
+
+  .nav__list {
+    padding: 18px 13.5px 23.5px 13.5px;
+  }
+
+  .user-link__author {
+    margin-left: 17.5px;
+  }
+
+  .breadcrumb {
+    &__list {
+      padding: 0px 0 5px 0px;
+    }
+  }
+
+  .hotel {
+    margin-bottom: 60px;
+
+    &__wrapper {
+      padding-top: 6px;
+    }
+
+    &__name {
+      margin-right: 10px;
+    }
+
+    &__offer {
+      margin-bottom: 5px;
+    }
+  }
+
+  .raiting {
+    margin-bottom: 7px;
+  }
+
+  .grid {
+    &__swiper {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &__wrapper {
+      padding-left: 0;
+    }
+  }
+
+  .booking {
+    width: 340px;
+    margin: 0;
+    padding: 26px 22px 22px 23px;
+
+    &__guests {
+      justify-content: flex-end;
+    }
+
+    &__room {
+      justify-content: flex-end;
+    }
+
+    &__room-img {
+      margin-right: 12px;
+    }
+
+    &__phone-number {
+      padding-left: 5px;
+    }
+
+    &__button {
+      margin: 0;
+      height: 45px;
+    }
+  }
+
+  .map {
+    width: 340px;
+    height: 210px;
+  }
+
+  .newsletter {
+    padding-top: 92px;
+    padding-bottom: 93px;
+
+    &__wrapper {
+      width: 706px;
+    }
+
+    &__send {
+      margin-bottom: 1px;
+      width: 353px;
+    }
+
+    &__button {
+      min-width: 65px;
+    }
+  }
+
+  .reviews {
+    &__thinks {
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    &__swiper__slide {
+      padding-top: 95px;
+    }
+
+    &__slide-container {
+      min-width: 579px;
+      padding-bottom: 27px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__stars {
+      margin-top: -3px;
+      margin-bottom: 3px;
+      padding-left: 2px;
+    }
+
+    &__stars-img {
+      margin-right: -2px;
+    }
+
+    &__text {
+      max-width: 455px;
+      font-weight: 300;
+      word-spacing: 0px;
+      text-align: justify;
+    }
+
+    &__buton-right {
+      transform: translatey(108%);
+      right: 0;
+    }
+
+    &__buton-left {
+      transform: translatey(108%);
+      left: 1px;
+    }
+  }
+
+  .card {
+    padding-top: 120px;
+
+    &__activity {
+      top: 1px;
+      width: 338.5px;
+    }
+
+    &__wrapper {
+      padding: 0 1px;
+    }
+
+    &__button {
+      padding-right: 18.5px;
+    }
+
+    &__text_golf {
+      width: 200px;
+    }
+  }
+
+  .footer__wrapper {
+    grid-template-columns: minmax(160px, 180px) 265px 1fr;
+    padding-bottom: 33px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    &__item-mobile {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 71px;
+  }
+
+  .nav {
+    display: none;
+
+    &_visible {
+      position: fixed;
+      top: 71px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      overflow: auto;
+    }
+
+    &__list-mobile {
+      padding-top: 13px;
+      padding-bottom: 27px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 17px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 31px 0 30px 0;
+    }
+  }
+
+  .header__search {
+    display: none;
+
+    &-visible {
+      display: flex;
+      margin: 0 0 17px 0;
+      width: 243px;
+      height: 40px;
+    }
+  }
+
+  .user {
+    display: none;
+
+    &-link {
+      flex-direction: column;
+    }
+
+    &-visible {
+      display: flex;
+    }
+
+    &-link__author {
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 12px;
+      color: #ffffff;
+    }
+  }
+
+  .logo__img {
+    width: 99px;
+    height: 13.42px;
+    margin-bottom: 1px;
+  }
+
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+
+  .header-top {
+    padding: 25px 20px 28px 20px;
+  }
+
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+
+    &__line {
+      width: 100%;
+      height: 1px;
+      background-color: $text-color;
+    }
+  }
+
+  .breadcrumb {
+    &__nav {
+      padding-bottom: 12px;
+      padding-left: 20px;
+    }
+  }
+
+  .hotel {
+    margin-bottom: 40px;
+
+    &__wrapper {
+      padding-left: 20px;
+      padding-top: 5px;
+      margin-bottom: 19px;
+    }
+
+    &__stars {
+      flex-basis: content;
+      padding: 0;
+      margin-right: 38px;
+    }
+
+    &__name {
+      width: 100%;
+    }
+
+    &__offer {
+      order: -1;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+
+    &__discription {
+      margin-right: 17px;
+    }
+  }
+
+  .raiting {
+    display: none;
+  }
+
+  .grid {
+    &__wrapper {
+      display: flex;
+      padding-right: 21.5px;
+      padding-left: 21.5px;
+    }
+
+    &__swiper {
+      height: 179px;
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__button_swiper {
+      width: 8px;
+      height: 8px;
+    }
+
+    &__buton-left {
+      background-image: url("../img/chevron-left-phone.svg");
+      top: 58%;
+      left: 5px;
+    }
+
+    &__buton-right {
+      background-image: url("../img/chevron-right-phone.svg");
+      top: 58%;
+      right: 6px;
+    }
+  }
+
+  .booking__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 728px;
+    margin: 0;
+  }
+
+  .booking {
+    width: 279px;
+    height: 210px;
+    margin-bottom: 20px;
+    padding-right: 21px;
+    padding-bottom: 26px;
+    padding-left: 22px;
+
+    &__guests {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__room {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__phone-number {
+      margin-right: 3px;
+    }
+
+    &__button {
+      width: 235px;
+    }
+  }
+
+  .map {
+    margin-left: 5px;
+    width: 279px;
+    // height: 173px;
+  }
+
+  .newsletter {
+    padding-top: 50px;
+    padding-bottom: 82px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 284px;
+      padding-top: 26px;
+      padding-left: 2px;
+    }
+
+    &__subscrib-text {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 5px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    &__send {
+      width: 283px;
+    }
+
+    &__input {
+      width: 215px;
+      padding: 0 20px;
+    }
+  }
+
+  .subscrib {
+    margin-bottom: 37px;
+  }
+
+  .reviews {
+    &__thinks {
+      font-size: 18px;
+      line-height: 23px;
+      padding: 0 38px;
+    }
+
+    &__swiper__slide {
+      padding-top: 87px;
+    }
+
+    &__slide-container {
+      min-width: 281px;
+      padding-bottom: 34px;
+    }
+
+    &__text {
+      width: 219px;
+      margin: 0 auto;
+      text-align: start;
+      word-spacing: 0px;
+    }
+
+    &__buton-right {
+      top: 11.5%;
+      right: 57px;
+    }
+
+    &__buton-left {
+      top: 11.7%;
+      left: 54px;
+    }
+  }
+
+  .card {
+    padding-top: 90px;
+    padding-bottom: 60px;
+
+    &__other {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 35px;
+      padding-left: 5.5%;
+    }
+
+    &__wrapper {
+      display: flex;
+      width: 88.5%;
+    }
+
+    &__activity {
+      width: 100%;
+    }
+
+    &__activity_waterfall {
+      margin-bottom: 28px;
+    }
+
+    &__activity_golf {
+      order: 1;
+    }
+
+    &__activity_sea {
+      order: 2;
+    }
+
+    &__button {
+      padding: 7px 19px;
+    }
+
+    &__text_sea {
+      width: 270px;
+    }
+
+    &__text_waterfall {
+      width: 220px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .footer {
+    &__wrapper {
+      grid-gap: 10px;
+      grid-template-columns: minmax(140px, 170px) 1fr 1fr;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__additional {
+      padding-left: 0;
+    }
+
+    &__legal {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 556px) {
+  .footer {
+    &__wrapper {
+      grid-gap: 10px;
+      grid-template-columns: 1fr;
+      padding-left: 20px;
+      padding-right: 10px;
+      padding-top: 68px;
+      padding-bottom: 21px;
+      grid-template-areas:
+        "logo"
+        "network"
+        "legal"
+        "additional"
+        "categories"
+        "contacts"
+        "send"
+        "bottoms";
+    }
+
+    &__network {
+      flex-wrap: wrap;
+      margin-right: 40px;
+      padding-left: 0;
+      padding-top: 27px;
+
+      .footer__title {
+        margin-right: 10px;
+      }
+
+      &-title {
+        margin-bottom: 21px;
+      }
+
+      &-icon {
+        padding-left: 2px;
+      }
+    }
+
+    &__legal {
+      padding-top: 17px;
+    }
+
+    &__additional {
+      padding-top: 18px;
+    }
+
+    &__categories {
+      padding-top: 19px;
+    }
+
+    &__contacts {
+      width: 100%;
+      padding-top: 31px;
+
+      .footer__contacts-item:not(:last-child) {
+        margin-bottom: 21px;
+      }
+    }
+
+    &__contacts-icon {
+      margin-right: 7px;
+      justify-content: center;
+    }
+
+    &__contacts-text {
+      padding: 0;
+    }
+
+    &__locations-img {
+      width: 30px;
+      padding-left: 2px;
+      margin-bottom: 5px;
+    }
+
+    &__envelope-img {
+      height: 24px;
+    }
+
+    &__send {
+      width: 96.5%;
+      padding-top: 41px;
+
+      .footer__title {
+        margin-bottom: 14px;
+      }
+
+      .footer__send-message {
+        margin-bottom: 12px;
+      }
+      .footer__btn-wrapper {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+    }
+
+    &__input-group {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    &__input-wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__input {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &__required {
+      margin-bottom: 15px;
+    }
+
+    &__bottoms {
+      flex-wrap: wrap;
+    }
+
+    &__bottoms-text {
+      padding-top: 20px;
+
+      .footer__bottoms-item:not(:last-child) {
+        margin-right: 9px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__phone-contacts {
+      white-space: nowrap;
+    }
+  }
+
+  .modal {
+    &__wrapper {
+      padding: 33px 40px;
+      max-width: 350px;
+    }
+
+    &__send-btn {
+      width: 120px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .modal {
+    &__wrapper {
+      padding: 33px 40px;
+      max-width: 350px;
+    }
+
+    &__img {
+      width: 70%;
+      height: 70%;
+    }
+
+    &__send-title {
+      font-size: 14px;
+    }
+
+    &__send-btn {
+      width: 100px;
+      height: 40px;
+    }
+
+    &__send-input {
+      margin-bottom: 7px;
+      padding: 8px;
+    }
+
+    &__send-message {
+      margin-bottom: 10px;
+      padding: 10px;
+      min-height: 60px;
+    }
+
+    &__required {
+      font-size: 10px;
+    }
+  }
+}
